@@ -1,0 +1,47 @@
+.big{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+margin-top: 6rem;}
+
+
+.card2 {
+    border: 1px solid rgb(220, 0, 0);
+    border-radius: .5rem;
+    height: 25rem;
+    width: 25rem;
+    background-color: gold;
+}
+
+  .form-group2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+    background-color: chartreuse;
+  }
+  
+  .form-group2 > label {
+    font-weight: bold;
+    font-size: .8em;
+    color: rgb(91, 1, 1);
+  }
+  
+  .form-group2 > input {
+    border: 3px solid rgb(133, 1, 1);
+    border-radius: .25em;
+    font-size: 1rem;
+    padding: .25em;
+  }
+  
+  .step-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .titre{
+    
+
+  }
+  
+  
+  

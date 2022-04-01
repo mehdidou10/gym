@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//import Home from './components/home/home';
+import Bigsearch from './components/bigSearch/bigsearch';
+import Produitscontainers from '../src/searchcontainer/produitscontainers';
+import Programmecontainer from '../src/programmecontainer/programmecontainer';
+import Nav from './components/navbar/nav';
+import Login from './components/login/login';
+import Singup from './components/signup/signup';
+import Card from './components/card/card';
+
+
+class App extends Component {
+ render(){
+    console.log(this.props)
+    return (
+    <div style={{
+     height:'120vh',
+     }}>
+     
+    <Router>
+    <Nav/>
+   <Routes>
+     
+     <Route exact path="/" element={<Bigsearch/>} /> 
+     <Route path="/Produitscontainers" element={<Produitscontainers/>} />
+    <Route path="/Programmecontainer" element={<Programmecontainer/>} />
+    <Route path="/login" element={<Login/>}/>
+    <Route path="/signup" element={<Singup/>}/>
+    <Route path="/card" element={<Card/>}/>
+
+    
+
+
+    
+
+   </Routes>
+   </Router>   
+   </div>
+      
+    );
+  }
 }
-
 export default App;
