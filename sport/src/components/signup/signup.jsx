@@ -53,23 +53,23 @@ sendforsignup = async (sign) => {
             <h3 class="step-title">This is step 1</h3>
       
             <div class="form-group1">
-              <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName"/>
+              <label for="firstName">First_Name</label>
+              <input type="text" onChange={e => this.setState({First_Name: e.target.value})}  value={this.state.First_Name}/>
             </div>
       
             <div class="form-group1">
-              <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName"/>
+              <label for="lastName">Last_Name</label>
+              <input type="text" onChange={e => this.setState({Last_Name: e.target.value})}  value={this.state.Last_Name}/>
             </div>
 
             <div class="form-group1">
-             <label for="number">number-phone</label>
-             <input type="text" name="address" id="address"/>
+             <label for="number">number_phone</label>
+             <input type="text" onChange={e => this.setState({number_phone: e.target.value})}  value={this.state.number_phone}/>
            </div>
             
            <div class="form-group1">
              <label for="age">age</label>
-             <input type="text" name="address" id="address"/>
+             <input type="text" onChange={e => this.setState({age: e.target.value})}  value={this.state.age}/>
            </div>
       </div>
  
@@ -86,12 +86,12 @@ sendforsignup = async (sign) => {
 
            <div class="form-group1">
                <label for="password">Password</label>
-              <input type="password" onChange={e => this.setState({password: e.target.value})} />
+              <input type="password" onChange={e => this.setState({password: e.target.value})} value={this.state.password} />
            </div>
 
           <div class="form-group1">
              <label for="password">confirm your Password</label>
-             <input type="password" />
+             <input type="password" onChange={e => this.setState({confirm_your_Password: e.target.value})}  value={this.state.confirm_your_Password}/>
           </div>
 
          <button type="button" onClick={() => this.sendforsignup() }>Submit</button>

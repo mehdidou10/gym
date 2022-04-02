@@ -1,31 +1,18 @@
 import React, { Component } from 'react'
-
+import Singlecard from './singlecard'
  class Card extends Component {
 
 
 
-
-    componentDidMount = async () => {
-        let token = JSON.parse(localStorage.getItem("TOKEN"))
-        let options = {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                auhtoken: token,
-
-                     },
-            
-                     };
-       let data= await fetch("http://localhost:777/card",options);
-       let response= await data.json()
-       console.log(response)
-}
-
   render() {
-   
+   console.log(this.props)
 return (
-      <div>
+      <div style={{ 
+       backgroundColor:'gold',
+        width: "80%",
         
+    }}>
+   {this.props}
       </div>
     )
   

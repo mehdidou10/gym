@@ -9,7 +9,7 @@ import Programmecontainer from '../src/programmecontainer/programmecontainer';
 import Nav from './components/navbar/nav';
 import Login from './components/login/login';
 import Singup from './components/signup/signup';
-import Card from './components/card/card';
+import Cardcontainer from './programmecontainer/cardcontainer';
 
 
 class App extends Component {
@@ -29,7 +29,7 @@ class App extends Component {
     <Route path="/Programmecontainer" element={<Programmecontainer/>} />
     <Route path="/login" element={<Login/>}/>
     <Route path="/signup" element={<Singup/>}/>
-    <Route path="/card" element={<Card/>}/>
+    <Route path="/cardcontainer" element={<Cardcontainer/>}/>
 
     
 
