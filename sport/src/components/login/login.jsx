@@ -34,7 +34,17 @@ sendforlogin = async (sign) => {
   render() {
     return (
 
-<div class='big'>
+<div class='big3'>
+
+  
+  <div className='text'>
+    
+<h1>ffffffffffffffffff</h1>
+
+  </div>
+
+
+
 
   <div class="card2 " >
           <h3 class="step-title">connexion man </h3>

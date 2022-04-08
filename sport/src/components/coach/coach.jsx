@@ -1,25 +1,24 @@
 import React, { Component } from 'react'
 import Singlecoach from '../coach/singlecoach';
 class Coach extends Component {
-    constructor(props){
-        super(props);
-         this.state={
-           theyare:3
-}
-    }
+  
+
+    
   render() {
+    console.log(this.props)
     return (
       <div style={{ 
         display: 'flex',
         justifyContent:'center',
         marginTop:'2rem',
         height:'28rem',
-        width: "80%",
+        width: "90%",
         backgroundColor:'blue',
+       gap:'7rem'
       }}>
           
           
-{this.props.co.map((el,idx)=> idx = this.state.theyare ? <Singlecoach personnage={el} /> : <></> )}     
+{this.props.co.map((el)=>  <Singlecoach personnage={el} />)}     
           
           
     </div>

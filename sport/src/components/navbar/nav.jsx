@@ -23,11 +23,11 @@ class nav extends Component {
              </div>
              
              <div className="item"> 
-             <Link to={'/cardcontainer'} > <button> programme </button></Link>
+             <Link to={'/cardcontainer'} > <button> card </button></Link>
              </div>
              
              <div className="item">
-                 <button> contact us  </button>
+             <Link to={"/Programmecontainer"}> <button> programme  </button></Link>
             </div>
             <div className="item selected">
             <Link to={"/login"}><button> Sign in / Login</button></Link>

@@ -1,16 +1,25 @@
-.big{
+.big3{
+  height: 40rem;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-around;
+  background-color: aquamarine;
+  flex-direction: row;
 margin-top: 6rem;}
 
+.text{
 
+background-color: azure;
+height: 25rem;
+width: 25rem;
+}
 .card2 {
     border: 1px solid rgb(220, 0, 0);
     border-radius: .5rem;
     height: 25rem;
     width: 25rem;
     background-color: gold;
+    
 }
 
   .form-group2 {

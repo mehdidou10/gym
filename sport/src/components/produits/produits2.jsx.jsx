@@ -4,7 +4,7 @@ import Singleproduit from './singleproduit';
 
 
 
-class Produitsbigsearch extends Component {
+class Produits2 extends Component {
   
   render() {
     
@@ -12,9 +12,12 @@ class Produitsbigsearch extends Component {
       <div style={{ 
         display: 'flex',
         flexWrap: 'wrap',
-        width: "80%",
-        backgroundColor:'black',
-        marginLeft:'10rem'
+        width: "90%",
+        height:'32rem',
+        backgroundColor:'red',
+        justifyContent:'center',
+        alignItems:'center'
+       
         
     }}>
 
@@ -22,11 +25,8 @@ class Produitsbigsearch extends Component {
   
       
 
-
-
-
     </div>
     )
   }
 }
-export default Produitsbigsearch
+export default Produits2
