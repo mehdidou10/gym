@@ -10,7 +10,7 @@ import Nav from './components/navbar/nav';
 import Login from './components/login/login';
 import Singup from './components/signup/signup';
 import Cardcontainer from './programmecontainer/cardcontainer';
-
+import Programme from './components/programme/programme';
 
 class App extends Component {
  render(){
@@ -30,9 +30,7 @@ class App extends Component {
     <Route path="/login" element={<Login/>}/>
     <Route path="/signup" element={<Singup/>}/>
     <Route path="/cardcontainer" element={<Cardcontainer/>}/>
-
-    
-
+    <Route path="/programme" element={<Programme/>}/>
 
     
 

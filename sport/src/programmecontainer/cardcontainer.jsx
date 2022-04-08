@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../components/card/card'
 
-
-
 class Cardcontainer extends Component {
     constructor(props) {
         super(props);
@@ -11,9 +9,7 @@ class Cardcontainer extends Component {
          
         }
       }
-
-
-    componentDidMount = async () => {
+componentDidMount = async () => {
         let token = JSON.parse(localStorage.getItem("TOKEN"))
         let options = {
             method: "GET",
@@ -22,14 +18,14 @@ class Cardcontainer extends Component {
                 authtoken: token,
 
                      },
-            
                      };
        let data= await fetch("http://localhost:777/card",options);
        let response= await data.json()
        this.setState({
-        data: data.user
+        data:response.user
       });
-       console.log(response)
+       console.log(response,"aaaaa")
+     
 }
   render() {
     console.log(this.state)
@@ -41,8 +37,9 @@ class Cardcontainer extends Component {
         justifyContent:'flex-start',
         alignItems:'center'
         }} >
-     <Card card1={this.state.data} />
 
+     <Card card1={this.state.data}/>
+     
       </div>
     )
   }

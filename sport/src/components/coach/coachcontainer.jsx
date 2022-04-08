@@ -1,7 +1,26 @@
 import React, { Component } from 'react'
 import Coach from '../coach/coach'
-import dotocoach from '../MOCK_DATA coach.json'
+
 class Coachcontainer extends Component {
+  constructor(props){
+    super(props);
+     this.state={
+       data:[]
+
+     }
+
+    }
+
+  componentDidMount = async () => {
+  
+   let data= await fetch("http://localhost:777/coaches");
+   let response= await data.json()
+   this.setState({
+    data: response.coaches
+  });
+   console.log(response,"aaaaa")
+
+}
   render() {
     return (
       <div style={{
@@ -9,8 +28,9 @@ class Coachcontainer extends Component {
         justifyContent:'center',
         height:'40rem',
         width:'100%',
+        backgroundColor:'red'
       }}>
-          <Coach co={dotocoach}/>
+          <Coach co={this.state.data}/>
       </div>
     )
   }
