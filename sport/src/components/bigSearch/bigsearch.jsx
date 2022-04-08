@@ -6,9 +6,6 @@ import Produitscontainers2 from '../../searchcontainer/produitscontainers2';
 import Coachcontainer from '../coach/coachcontainer';
 import doto from "../MOCK_DATA (1).json";
 import doto3 from "../MOCK_DATA 3.json";
-
-
-
 import './bigsearch.css'
 
  class Bigsearch extends Component {
@@ -44,6 +41,7 @@ import './bigsearch.css'
   <div className='programmme'  >
         <h1> PROGRAMME </h1>
         {<Programmecontainer2 prog2={prog}/>}
+        
        <Link to={'/Programmecontainer'} >      
           <button /*onClick={() => 
       {this.props.history.push("/Produitscontainers")}}*/>
@@ -102,24 +100,49 @@ import './bigsearch.css'
 
 
 
+{/*footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/}
 
-{/*inscritionnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/}
-
-
-
+<div className='footer'>
 
 
+      <div className='reseau'>
 
-{/*inscritionnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/}
+               <p>Suivez-nous sur les reseau socieux </p>
+
+               <div className='facebook'>
+                 <img src="image/facebook.png" alt="facebook" />
+               <a href="https://www.flaticon.com/fr/icones-gratuites/facebook" title="facebook icônes">notre page de facebook</a>
+               </div>
+               
+               <div className='instagram'>
+               <img src="image/instagram.png" alt="instagram"/>
+               <a href="https://www.youtube.com/watch?v=X-swJqjzjCI"> insta</a>
+               </div>
+
+
+       </div>
 
 
 
 
+       <div className='map'>
+           <div className='left'>
+         <p>pour le map</p>
+           </div>
 
-<div>
-  <h1>mommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</h1>
+           <div className='right'>
+              
+          </div>
+
+        </div>
+
+
+      
+
 </div>
 
+
+{/*footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/}
 
 
 </div>
