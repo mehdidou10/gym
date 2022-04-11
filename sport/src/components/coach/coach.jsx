@@ -18,7 +18,7 @@ class Coach extends Component {
       }}>
           
           
-{this.props.co.map((el)=>  <Singlecoach personnage={el} />)}     
+{this.props.co.map((el)=>  <Singlecoach personnage={el}/>)}     
           
           
     </div>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 //import Produitscontainers from '../../searchcontainer/produitscontainers';
-import Programmecontainer2 from '../../programmecontainer/programmecontainer2';
+//import Programmecontainer2 from '../../programmecontainer/programmecontainer2';
 import Produitscontainers2 from '../../searchcontainer/produitscontainers2';
 import Coachcontainer from '../coach/coachcontainer';
 import doto from "../MOCK_DATA (1).json";
@@ -40,7 +40,7 @@ import './bigsearch.css'
   
   <div className='programmme'  >
         <h1> PROGRAMME </h1>
-        {<Programmecontainer2 prog2={prog}/>}
+       
         
        <Link to={'/Programmecontainer'} >      
           <button /*onClick={() => 

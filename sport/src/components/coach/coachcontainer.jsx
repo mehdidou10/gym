@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
 import Coach from '../coach/coach'
-
 class Coachcontainer extends Component {
   constructor(props){
     super(props);
      this.state={
        data:[]
-
-     }
-
-    }
+}
+}
 
   componentDidMount = async () => {
   

@@ -1,10 +1,34 @@
 import React, { Component } from 'react';
-
+import Singlecard2 from './singlecard2';
 
 class Card extends Component {
+       constructor(props) {
+         super(props)
+       
+         this.state = {
+            user:''
+         }
+       }
 
+  componentDidMount = async () => {
+    let token = JSON.parse(localStorage.getItem("TOKEN"))
+    let options = {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            authtoken: token,
+
+                 },
+                 };
+   let data= await fetch("http://localhost:777/card",options);
+   let response= await data.json();
+   this.setState({
+    user: response.user
+  });
+   console.log(response,"aaaaa")
+ 
+}
   render() {
-   console.log(this.props,"zzzzz")
 return (
       <div style={{ 
        backgroundColor:'gold',
@@ -16,11 +40,7 @@ return (
         alignItems:'center'
         
     }}>
-   <p> {this.props.card1[0].First_Name}</p>
-   <p> {this.props.card1[0].Last_Name}</p>
-   <p> {this.props.card1[0].number_phonel}</p>
-   <p> {this.props.card1[0].Email}</p>
-  
+      <Singlecard2 user1={this.state.user}/>
       </div>
     )
   

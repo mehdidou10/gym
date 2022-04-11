@@ -1,17 +1,25 @@
 .big3{
-  height: 40rem;
+  height: 80rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: aquamarine;
   flex-direction: row;
-margin-top: 6rem;}
+margin-top: 6rem;
+background-image:url("https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGd5bXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80");    
+ 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .text{
-
-background-color: azure;
-height: 25rem;
-width: 25rem;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 35rem;
+width: 50rem;
+background-color: aqua;
 }
 .card2 {
     border: 1px solid rgb(220, 0, 0);
@@ -19,6 +27,7 @@ width: 25rem;
     height: 25rem;
     width: 25rem;
     background-color: gold;
+    margin-right: 5rem;
     
 }
 
@@ -46,10 +55,6 @@ width: 25rem;
     margin: 0;
     margin-bottom: 1rem;
     text-align: center;
-  }
-  .titre{
-    
-
   }
   
   

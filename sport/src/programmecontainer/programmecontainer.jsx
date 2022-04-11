@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import Programme from '../components/programme/programme';
-import doto2 from "../components/MOCK_DATA.json"
+
 
  class Programmecontainer extends Component {
+  
   render() {
     return (
       <div  style={{
@@ -13,7 +14,7 @@ import doto2 from "../components/MOCK_DATA.json"
         }} 
         >
             
-      <Programme pro={doto2}   />
+      <Programme/>
         
         </div>
     )

@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import { Carousel } from 'antd';
 import 'antd/dist/antd.css';
-
-
-
  class Singlecard2 extends Component {
 
   render() {

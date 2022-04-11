@@ -9,9 +9,9 @@ import { Card } from 'antd';
      
       
       cover={
-      <img style={{height:'25rem'}} alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
+      <img style={{height:'20rem',width:'20rem'}} alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
     >
-      <Card.Meta  title="Europe Street beat" description="www.instagram.com" />
+      <Card.Meta  title={this.props.user1.First_Name} description={this.props.user1.Email} />
     </Card>
     )
   }
