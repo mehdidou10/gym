@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Singleprogramme from './singleprogramme';
+import { connect } from 'react-redux'
 
  class Programme extends Component {
   constructor(props){
@@ -11,12 +12,6 @@ import Singleprogramme from './singleprogramme';
 
 
   componentDidMount = async () => {
-  fetch()
-}
-
-
-
- fetch= async()=>{
   let data= await fetch("http://localhost:777/programme");
   let response= await data.json()
   this.setState({
@@ -28,6 +23,9 @@ import Singleprogramme from './singleprogramme';
 
  }
   render() {
+    let dispatch = this.props.dispatch;
+
+console.log(this.props,'oippoioo')
     return (
       <div style={{ 
         display: 'flex',
@@ -39,11 +37,12 @@ import Singleprogramme from './singleprogramme';
         marginLeft:'10rem'
       }}>
     
-    <Singleprogramme data1={this.state.data}/>
+    {this.state.data.map((el)=> <Singleprogramme data1={el} dispatch1={dispatch}/>)}
    </div>
    
     
     )
   }
 }
-export default Programme;
+ 
+export default connect( null)(Programme)

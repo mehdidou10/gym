@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import { Link } from "react-router-dom";
 
  class singleprogramme extends Component {
   render() {
-    console.log(this.props.data1)
+    console.log(this.props)
     return (
     <div   style={{ 
             width: '15rem',
@@ -15,17 +16,16 @@ import React, { Component } from 'react'
         }}>
       
 
-  <img style={{width:'5rem',height:'5rem'}} src="" alt={this.props.data1.coach} />
+  <img style={{width:'5rem',height:'5rem'}} src="" alt={this.props.data1.coach}/>
       <h5 style={{color:'white',fontSize:"2rem"}}>{this.props.data1.programme}</h5>
           <p style={{
                   backgroundColor:'gold'
                    }}>
                      {this.props.data1.tarif}</p>
-    
-           <button >
-                  Suscribe2
-           </button>
-      
+                     <Link to={"/cardcontainer" }>
+ <button  onClick={e => this.props.dispatch1({type: "programme", abonnement: this.props.data1.programme})}>
+                       Ok</button>
+                       </Link>
      
 </div>
     )

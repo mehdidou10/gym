@@ -2,20 +2,22 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 //import Produitscontainers from '../../searchcontainer/produitscontainers';
 //import Programmecontainer2 from '../../programmecontainer/programmecontainer2';
-import Produitscontainers2 from '../../searchcontainer/produitscontainers2';
+//import Produitscontainers2 from '../../searchcontainer/produitscontainers2';
 import Coachcontainer from '../coach/coachcontainer';
-import doto from "../MOCK_DATA (1).json";
-import doto3 from "../MOCK_DATA 3.json";
+//import doto from "../MOCK_DATA (1).json";
+//import doto3 from "../MOCK_DATA 3.json";
 import './bigsearch.css'
 
  class Bigsearch extends Component {
-  
+
   render() {
     
-    const _ = require("lodash");
+    /*const _ = require("lodash");
     const sample = _.sampleSize(doto, 3); 
     const prog =_.sampleSize(doto3,3)
-    console.log(sample)   
+    console.log(sample) */
+    
+    
     return (
    <div className='bigsearch'>
     
@@ -60,7 +62,7 @@ import './bigsearch.css'
 {/* produitsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
          <div className='produits'>
            <h1>LES PRODUITS </h1>
-             {<Produitscontainers2   data={sample}/>}
+             {/*{<Produitscontainers2   data={sample}/>}*/}
      
               <Link to={'/Produitscontainers'}>      
                <button >
@@ -127,6 +129,19 @@ import './bigsearch.css'
 
        <div className='map'>
            <div className='left'>
+
+
+
+
+
+
+
+
+
+
+
+
+
          <p>pour le map</p>
            </div>
 

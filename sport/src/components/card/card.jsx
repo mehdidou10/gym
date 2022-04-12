@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import Singlecard2 from './singlecard2';
+import Singlecard from './singlecard';
+
+
 
 class Card extends Component {
        constructor(props) {
          super(props)
        
          this.state = {
-            user:''
+            user:[]
          }
        }
 
@@ -40,9 +42,13 @@ return (
         alignItems:'center'
         
     }}>
-      <Singlecard2 user1={this.state.user}/>
+      <Singlecard user1={this.state.user}/>
       </div>
     )
   
 }}
+
+
+
 export default Card
+ 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Programme from '../components/programme/programme';
+//import Programme from '../components/programme/programme';
 
 
  class Programmecontainer extends Component {
@@ -14,7 +14,7 @@ import Programme from '../components/programme/programme';
         }} 
         >
             
-      <Programme/>
+      
         
         </div>
     )
