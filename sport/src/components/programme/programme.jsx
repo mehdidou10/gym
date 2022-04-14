@@ -10,7 +10,6 @@ import { connect } from 'react-redux'
 }
 }
 
-
   componentDidMount = async () => {
   let data= await fetch("http://localhost:777/programme");
   let response= await data.json()
@@ -19,27 +18,40 @@ import { connect } from 'react-redux'
  });
   console.log(response,"aaaaa")
 
-
-
  }
   render() {
     let dispatch = this.props.dispatch;
 
 console.log(this.props,'oippoioo')
     return (
+
       <div style={{ 
         display: 'flex',
         justifyContent:'center',
-        flexWrap: 'wrap',
-        width: "80%",
+        flexDirection:'column',
+        backgroundColor:'red',
+        height:'220vh'
+        }}>
+
+
+  <h1 style={{display: 'flex',justifyContent:'center',}}>choose your programme</h1>
+
+      <div style={{ display: 'flex',justifyContent:'center',
+        
+        width: "85%",
         height:'38rem',
         backgroundColor:'yellow',
-        marginLeft:'10rem'
+        marginLeft:'9rem',
+        gap:'2rem',
+        marginBottom:'20rem'
+        
       }}>
+    
+
     
     {this.state.data.map((el)=> <Singleprogramme data1={el} dispatch1={dispatch}/>)}
    </div>
-   
+   </div>
     
     )
   }

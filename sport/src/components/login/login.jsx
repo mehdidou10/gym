@@ -2,6 +2,11 @@ import React, { Component } from 'react'
 import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 import './login.css';
+import { withRouter } from '../withrouter/withrouter';
+import login from '../redux/isloggedreducer'
+import { compose } from "redux";
+import { connect } from "react-redux";
+
 
 
 
@@ -15,7 +20,7 @@ import './login.css';
     };
 }
 
-sendforlogin = async (sign) => {
+sendforlogin = async (Email,password) => {
         console.log("dghg")
   let options = {
       method: "POST",
@@ -23,20 +28,22 @@ sendforlogin = async (sign) => {
           "Content-Type": "application/json",
       },
       body: JSON.stringify({
-          Email: this.state.Email,
-          password: this.state.password,
+          Email,
+          password,
       })
   };
  let data= await fetch("http://localhost:777/login", options);
  let response= await data.json()
  if(data.status===200){
+   this.props.login()
   localStorage.setItem("TOKEN", JSON.stringify(response.token))}
  console.log(response)
 }
 
   render() {
+    console.log(this.props.isLogged)
     const contentStyle = {
-      height: '160px',
+      
       color: '#fff',
       lineHeight: '160px',
       textAlign: 'center',
@@ -78,8 +85,10 @@ sendforlogin = async (sign) => {
         <input type="password" onChange={e => this.setState({password: e.target.value})}  value={this.state.password} />
       </div>
       
-      <button type="button"  onClick={() => this.sendforlogin()} data-next>Connect</button>
-     
+  <button type="button"  onClick={() => this.sendforlogin(this.state.Email,this.state.password)} data-next>Connect</button>
+
+        {/*<button type="button"  onClick={() => this.props.navigate('/home2')} data-next>Connect</button>*/}
+      
   </div>
     
 
@@ -87,4 +96,26 @@ sendforlogin = async (sign) => {
     )
   }
 }
-export default Login
+
+const mapStateToProps = (state) => {
+  return{
+    isLogged:state.isLogged.isLogged
+
+  }
+}
+console.log(login())
+
+const mapDispatchToProps = (dispatch)=>{
+  return{
+    login:() => dispatch(login()),
+  }
+
+}
+
+
+
+
+export default compose(
+  withRouter,
+  connect(mapStateToProps, mapDispatchToProps)
+)(Login);

@@ -30,7 +30,7 @@ import { Carousel } from 'antd';
 
 
 <div style={{ 
-            width: '23rem',
+            width: '20rem',
             height:'20rem',
             margin: 10,
             padding:22,
@@ -61,7 +61,7 @@ import { Carousel } from 'antd';
          <div>
               <h5 >{this.props.book.prix}</h5>
                <button >
-                      Suscribe2
+                      Acheter
                </button>
           </div>
     

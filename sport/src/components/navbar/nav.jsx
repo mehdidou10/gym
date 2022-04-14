@@ -17,7 +17,23 @@ class nav extends Component {
                       </button>
                    </Link>
              </div>
-           
+
+
+
+             <div className="item wah"> 
+             <Link to={"/Home2" }>
+             <button> 
+                         HOME 
+              </button>
+              </Link>
+
+
+             </div>
+
+
+
+
+
              <div className="item"> 
              <Link to={'/produitscontainers'} > <button>produits</button></Link>
              </div>

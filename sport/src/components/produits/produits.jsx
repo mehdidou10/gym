@@ -43,7 +43,7 @@ class Produits extends Component {
         
          <h1 style={{height: '160px',color: '#fff',lineHeight: '160px'}}>Vitamines et Santé</h1>
 
-<div style={{backgroundColor:'black',height:'23rem' ,width:'70rem',display: 'flex',justifyContent:'center',alignItems:'center',flexDirection:'row',overflow:'hidden',overflowX:'scroll'}}>
+<div style={{backgroundColor:'silver',height:'23rem' ,width:'70rem',display: 'flex',justifyContent:'center',alignItems:'center',flexDirection:'row',overflow:'hidden',overflowX:'scroll'}}>
 {this.props.fitn2.map((el,idx) => idx < this.state.count ? <Singleproduit book={el} key={idx} /> : <></>)}
 {<button  type="link"  onClick={e => this.setState({count: this.state.count + 2})} >
      <img style={{width:'3rem',height:'3rem'}} src="https://static.vecteezy.com/ti/vecteur-libre/p2/567102-icone-plus-supplementaire-gratuit-vectoriel.jpg" alt='mmo'/>

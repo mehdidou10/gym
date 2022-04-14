@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Produits from '../components/produits/produits';
+
 import Sidebar from '../components/sidebar/sidebar';
 
 class Produitscontainers extends Component {

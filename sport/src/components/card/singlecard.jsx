@@ -1,26 +1,31 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Card } from 'antd';
-
 
 class Singlecard extends Component {
   render() {
     console.log(this.props)
-    return( <Card 
-      style={{
-        height:'10rem',
-      }}
-     
+    return( 
+    
+    <div style={{
+        height:'30rem',
+        width:'35rem',
+        backgroundColor:'blue',
+        display:'flex',
+        justifyContent:'center',
+        alignItems:'center',
+        flexDirection:'column'
+
+      }}>
       
-      cover={
-      <img style={{height:'20rem',width:'20rem'}} alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>}
-    >
-      <Card.Meta  title={this.props.user1[0]?.First_Name} description={this.props.user1[0]?.Email} />
-      <p>{this.props.user1[0]?.Email}</p>
+ <img style={{height:'10rem',width:'10rem'}} alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"/>
+   
+    
     <p>{this.props.abonnement.abonnement}</p>
-    <p></p>
+    <h1>{this.props.user1[0]?.First_Name}</h1>
+    <h1>{this.props.user1[0]?.Last_Name}</h1>
+    <h1>{this.props.user1[0]?.Email}</h1>
     <input type="file" accept="image/*" />
-    </Card>
+    </div>
   
 
 

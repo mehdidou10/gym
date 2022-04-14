@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Singlecard from './singlecard';
 
-
-
 class Card extends Component {
        constructor(props) {
          super(props)

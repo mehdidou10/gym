@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import 'antd/dist/antd.css';
 import { Menu } from 'antd';
+import { Link } from "react-router-dom";
+
 import { AppstoreOutlined,MailOutlined} from '@ant-design/icons';
 
 const { SubMenu } = Menu;
@@ -29,7 +31,7 @@ const { SubMenu } = Menu;
         
 
           <SubMenu  icon={<MailOutlined />} title="produits">
-            <Menu.Item key="5">Nutrition Sportive</Menu.Item>
+          <Link to={"/Produitnutrition" }> <Menu.Item key="5">Nutrition Sportive</Menu.Item></Link>
             <Menu.Item key="6">Vitamines et Santé</Menu.Item>
             <Menu.Item key="7">Vêtements et Accessoires </Menu.Item>
           </SubMenu>
