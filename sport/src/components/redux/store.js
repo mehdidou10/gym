@@ -1,5 +1,5 @@
 import { createStore } from 'redux'
-import reducers from './isloggedreducer'
+import reducers from './reducers'
 
 let store = createStore(reducers);
 
