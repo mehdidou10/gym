@@ -40,8 +40,6 @@ class nav extends Component {
             
 
 
-
-
              <div className="item"> 
              <Link to={'/produitscontainers'} > <button>produits</button></Link>
              </div>
@@ -54,8 +52,6 @@ class nav extends Component {
              <Link to={"/Programme"}> <button> Abonnement </button></Link>
             </div>
 
-
-            
             {islogged? <div className="item"> 
 <button onClick={()=>{
   this.props.logout()

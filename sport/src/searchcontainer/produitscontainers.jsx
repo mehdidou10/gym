@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import Produits from '../components/produits/produits';
+import 'antd/dist/antd.css';
+import { Menu } from 'antd';
+import { AppstoreOutlined,MailOutlined} from '@ant-design/icons';
+import { Link } from "react-router-dom";
 
-import Sidebar from '../components/sidebar/sidebar';
+
 
 class Produitscontainers extends Component {
   constructor(props){
@@ -9,10 +13,10 @@ class Produitscontainers extends Component {
      this.state={
        data:[],
        data2:[],
-       data3:[]
+       data3:[],
+       collapsed: false
      }
     }
-
 
     componentDidMount = async () => {
     let data= await fetch("http://localhost:777/produits");
@@ -35,7 +39,48 @@ class Produitscontainers extends Component {
    }
 
   render() {
+
+    const { SubMenu } = Menu;
+
     return (
+      
+      
+      <div>
+ <div style={{ width: 256 }}>
+        
+        <Menu defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']} mode="inline" theme="dark"  inlineCollapsed={this.state.collapsed}>
+          
+          
+          <Menu.Item  >
+            Option 1
+          </Menu.Item>
+          <Menu.Item  >
+            Option 2
+          </Menu.Item>
+        
+
+          <SubMenu  icon={<MailOutlined />} title="produits">
+          <Link to={"/Produitnutrition" }> <Menu.Item key="5">Nutrition Sportive</Menu.Item></Link>
+            <Menu.Item key="6">Vitamines et Santé</Menu.Item>
+            <Menu.Item key="7">Vêtements et Accessoires </Menu.Item>
+          </SubMenu>
+
+
+
+          <SubMenu  icon={<AppstoreOutlined />} title="panier">
+            <Menu.Item key="9">panier</Menu.Item>
+            <Menu.Item key="10">Option 10</Menu.Item>
+          </SubMenu>
+
+        </Menu>
+      </div>
+
+
+
+
+
+
+
       <div style={{
         display:'flex',
         justifyContent:'center',
@@ -44,10 +89,12 @@ class Produitscontainers extends Component {
         width:'100%',
         backgroundColor:'orange',
       }} >
-   <Sidebar/>
+   
 
     <Produits fitn={this.state.data} fitn2={this.state.data2} fitn3={this.state.data3} />
           
+        </div>
+        
         </div>
     )
   }
