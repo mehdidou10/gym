@@ -1,4 +1,4 @@
-import {  combineReducers } from 'redux';
+import { combineReducers } from 'redux';
 import isLoggedReducer from './isloggedreducer';
 import programmereducer from './programmereducer'
 

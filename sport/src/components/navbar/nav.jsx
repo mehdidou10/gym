@@ -1,9 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import './nav.css'
+import './nav.css';
+import {logout} from '../redux/action';
+import { connect } from "react-redux";
+import { withRouter } from '../withrouter/withrouter';
+import { compose } from "redux";
+
 
 class nav extends Component {
   render() {
+    let islogged = this.props.isLogged;
+    console.log(islogged,'ttytygf')
     return (
 
 <div className="navbar" >
@@ -30,6 +37,7 @@ class nav extends Component {
 
              </div>
 
+            
 
 
 
@@ -45,9 +53,25 @@ class nav extends Component {
              <div className="item">
              <Link to={"/Programme"}> <button> Abonnement </button></Link>
             </div>
-            <div className="item selected">
-            <Link to={"/login"}><button> Sign in / Login</button></Link>
-            </div>
+
+
+            
+            {islogged? <div className="item"> 
+<button onClick={()=>{
+  this.props.logout()
+  this.props.navigate("/")
+
+   }} >deconn</button>
+             </div>:<div className="item selected">
+            <Link to={"/login"}><button>  is not logged</button></Link>
+            </div>}
+
+
+
+
+
+
+
             <div className="item selected ">
             <Link to={"/signup" }>
                 <button className="signup"> Sign up </button>
@@ -64,4 +88,20 @@ class nav extends Component {
     )
   }
 }
-export default nav
+
+const mapStateToProps = (state) => {
+  return{
+    isLogged:state.isLogged.isLogged
+
+  }
+}
+const mapDispatchToProps = (dispatch)=>{
+  return{
+    logout:() => dispatch(logout()),
+  }
+
+}
+export default compose(
+  withRouter,
+  connect(mapStateToProps, mapDispatchToProps)
+)(nav); 

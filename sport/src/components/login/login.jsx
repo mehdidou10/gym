@@ -3,7 +3,7 @@ import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 import './login.css';
 import { withRouter } from '../withrouter/withrouter';
-import login from '../redux/isloggedreducer'
+import {login} from '../redux/action';
 import { compose } from "redux";
 import { connect } from "react-redux";
 
@@ -36,7 +36,10 @@ sendforlogin = async (Email,password) => {
  let response= await data.json()
  if(data.status===200){
    this.props.login()
-  localStorage.setItem("TOKEN", JSON.stringify(response.token))}
+  localStorage.setItem("TOKEN", JSON.stringify(response.token))
+
+  this.props.navigate("/home2");
+}
  console.log(response)
 }
 
@@ -103,7 +106,7 @@ const mapStateToProps = (state) => {
 
   }
 }
-console.log(login())
+
 
 const mapDispatchToProps = (dispatch)=>{
   return{
@@ -111,9 +114,6 @@ const mapDispatchToProps = (dispatch)=>{
   }
 
 }
-
-
-
 
 export default compose(
   withRouter,
