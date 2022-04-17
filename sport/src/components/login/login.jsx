@@ -7,17 +7,13 @@ import {login} from '../redux/action';
 import { compose } from "redux";
 import { connect } from "react-redux";
 
-
-
-
  class Login extends Component {
   constructor(props){
     super(props);
     this.state = {
         Email: "",
         password:""
-
-    };
+   };
 }
 
 sendforlogin = async (Email,password) => {
@@ -40,11 +36,11 @@ sendforlogin = async (Email,password) => {
 
   this.props.navigate("/home2");
 }
- console.log(response)
+ //console.log(response)
 }
 
   render() {
-    console.log(this.props.isLogged)
+    //console.log(this.props.isLogged)
     const contentStyle = {
       
       color: '#fff',
@@ -73,9 +69,6 @@ sendforlogin = async (Email,password) => {
   </Carousel>,            
         </div>
 
-
-
-
   <div class="card2 " >
           <h3 className="step-title">connexion man</h3>
       <div className="form-group2">
@@ -94,7 +87,6 @@ sendforlogin = async (Email,password) => {
       
   </div>
     
-
 </div>
     )
   }
@@ -106,7 +98,6 @@ const mapStateToProps = (state) => {
 
   }
 }
-
 
 const mapDispatchToProps = (dispatch)=>{
   return{

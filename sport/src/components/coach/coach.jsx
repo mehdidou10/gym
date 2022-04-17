@@ -3,7 +3,6 @@ import Singlecoach from '../coach/singlecoach';
 class Coach extends Component {
   
 
-    
   render() {
     console.log(this.props)
     return (

@@ -1,6 +1,5 @@
 import * as actionTypes from "./types";
 
-
 {/*const produits =(state=[],action)=> {
     if(action.type=='produits'){
         return [...state,action]
@@ -10,7 +9,6 @@ import * as actionTypes from "./types";
     return state;
 }
 */}
-
 
   const INITIAT_STATE = {
     isLogged: false,

@@ -5,6 +5,7 @@ import { Carousel } from 'antd';
 //import { Card } from 'antd';
 
  class Singleproduit extends Component {
+   
   render() {
      
     return (
@@ -60,7 +61,7 @@ import { Carousel } from 'antd';
      </div> 
          <div>
               <h5 >{this.props.book.prix}</h5>
-               <button >
+               <button onClick={e=>{this.props.addBook(this.props.book.name)}}>
                       Acheter
                </button>
           </div>

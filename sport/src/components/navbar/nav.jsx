@@ -6,7 +6,6 @@ import { connect } from "react-redux";
 import { withRouter } from '../withrouter/withrouter';
 import { compose } from "redux";
 
-
 class nav extends Component {
   render() {
     let islogged = this.props.isLogged;
@@ -17,6 +16,7 @@ class nav extends Component {
 
 
     <div className="left-side">
+      
              <div className="item wah"> 
                    <Link to={"/" }>
                       <button> 
@@ -30,11 +30,9 @@ class nav extends Component {
              <div className="item wah"> 
              <Link to={"/Home2" }>
              <button> 
-                         HOME 
+                         HOME2 
               </button>
               </Link>
-
-
              </div>
 
             
@@ -52,20 +50,15 @@ class nav extends Component {
              <Link to={"/Programme"}> <button> Abonnement </button></Link>
             </div>
 
-            {islogged? <div className="item"> 
-<button onClick={()=>{
-  this.props.logout()
-  this.props.navigate("/")
 
-   }} >deconn</button>
-             </div>:<div className="item selected">
-            <Link to={"/login"}><button>  is not logged</button></Link>
+
+
+
+{islogged? <div className="item"><button onClick={()=>{this.props.logout();this.props.navigate("/")}}>deconnected</button></div>
+              
+            :<div className="item selected">
+            <Link to={"/login"}><button> connexion</button></Link>
             </div>}
-
-
-
-
-
 
 
             <div className="item selected ">
