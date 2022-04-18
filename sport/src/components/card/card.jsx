@@ -25,7 +25,7 @@ class Card extends Component {
    this.setState({
     user: response.user
   });
-   console.log(response,"aaaaa")
+  // console.log(response,"aaaaa")
  
 }
   render() {

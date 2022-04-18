@@ -9,12 +9,15 @@ import * as actionTypes from "./types";
     return state;
 }
 */}
+let exist = window.localStorage.getItem("TOKEN");
+let logged = exist ? true : false;
+
+
 
   const INITIAT_STATE = {
-    isLogged: false,
+    isLogged: logged,
   };
 let isLoggedReducer = (state = INITIAT_STATE, action) => {
-    console.log(action)
     switch(action.type){
       case actionTypes.LOGIN:
         return { ...state, isLogged: true };

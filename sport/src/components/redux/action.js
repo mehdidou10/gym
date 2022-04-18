@@ -21,9 +21,21 @@ export const login = () => {
     };
   };
 
-  export const getallProds = (products) => {
+  export const getallProds1 = (products) => {
     return {
-      type: actionTypes.GET_ALL_PRODUCTS,
+      type: actionTypes.PRODUCTS1,
+      payload: { products },
+    };
+  };
+  export const getallProds2 = (products) => {
+    return {
+      type: actionTypes.PRODUCTS2,
+      payload: { products },
+    };
+  };
+  export const getallProds3 = (products) => {
+    return {
+      type: actionTypes.PRODUCTS3,
       payload: { products },
     };
   };

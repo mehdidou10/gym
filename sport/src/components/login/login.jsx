@@ -92,7 +92,7 @@ sendforlogin = async (Email,password) => {
   }
 }
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state) => {     
   return{
     isLogged:state.isLogged.isLogged
 

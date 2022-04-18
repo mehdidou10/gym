@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import Singleproduit from './singleproduit';
 
+
+
+
+import { connect } from "react-redux";
+
+
+
+
+
 class Produits extends Component {
     constructor(props){
         super(props);
@@ -36,8 +45,9 @@ class Produits extends Component {
 
               <h1 style={{height: '7rem',color: '#fff',lineHeight: '160px',marginBottom:'3rem'}} > Nutrition Sportive</h1>
 
- <div style={{backgroundColor:'red',height:'23rem' ,width:'70rem',marginTop:'' ,  display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'row',overflow:'hidden',overflowX:'scroll'}}>
-{this.props.fitn.map((el,idx) => idx < this.state.count ? <Singleproduit book={el} key={idx} addBook={this.addToCart1}/> : <></>)}
+ 
+ <div style={{backgroundColor:'red',height:'23rem',width:'70rem', display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'row',overflow:'hidden',overflowX:'scroll'}}>
+{this.props.products1.map((el,idx) => idx < this.state.count ? <Singleproduit book={el} key={idx} addBook={this.addToCart1}/> : <></>)}
 {<button  type="link"  onClick={e => this.setState({count: this.state.count + 2})} >
      <img style={{width:'3rem',height:'3rem'}} src="https://static.vecteezy.com/ti/vecteur-libre/p2/567102-icone-plus-supplementaire-gratuit-vectoriel.jpg" alt='moomom'/>
 </button>}
@@ -52,7 +62,7 @@ class Produits extends Component {
          <h1 style={{height: '160px',color: '#fff',lineHeight: '160px'}}>Vitamines et Santé</h1>
 
 <div style={{backgroundColor:'silver',height:'23rem' ,width:'70rem',display: 'flex',justifyContent:'center',alignItems:'center',flexDirection:'row',overflow:'hidden',overflowX:'scroll'}}>
-{this.props.fitn2.map((el,idx) => idx < this.state.count ? <Singleproduit book={el} key={idx} addBook={this.addToCart1}/> : <></>)}
+{this.props.products2.map((el,idx) => idx < this.state.count ? <Singleproduit book={el} key={idx} addBook={this.addToCart1}/> : <></>)}
 {<button  type="link"  onClick={e => this.setState({count: this.state.count + 2})} >
      <img style={{width:'3rem',height:'3rem'}} src="https://static.vecteezy.com/ti/vecteur-libre/p2/567102-icone-plus-supplementaire-gratuit-vectoriel.jpg" alt='mmo'/>
 </button>}
@@ -66,7 +76,7 @@ class Produits extends Component {
              <h1 style={{height: '160px',color: '#fff',lineHeight: '160px'}}>Vêtements et Accessoires</h1>
 
 <div style={{marginBottom:'10rem',backgroundColor:'black',height:'23rem' ,width:'70rem',   display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'row',overflow:'hidden',overflowX:'scroll'}}>
-{this.props.fitn3.map((el,idx) => idx < this.state.count ? <Singleproduit book={el} key={idx} addBook={this.addToCart1}/> : <></>)}
+{this.props.products3.map((el,idx) => idx < this.state.count ? <Singleproduit book={el} key={idx} addBook={this.addToCart1}/> : <></>)}
 {<button  type="link"  onClick={e => this.setState({count: this.state.count + 2})} >
      <img style={{width:'3rem',height:'3rem'}} src="https://static.vecteezy.com/ti/vecteur-libre/p2/567102-icone-plus-supplementaire-gratuit-vectoriel.jpg" alt='mom'/>
 </button>}
@@ -80,4 +90,19 @@ class Produits extends Component {
     }
 }
 
-export default Produits;
+
+
+
+
+const mapStateToProps = (state) => {       // recuperer les donnes 
+    return{
+    products1:state.shop.produits1,
+  
+    products2:state.shop.produits2,
+  
+    products3:state.shop. produits3
+  
+    }
+  }
+
+  export default connect(mapStateToProps)(Produits);

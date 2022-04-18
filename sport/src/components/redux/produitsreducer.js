@@ -2,16 +2,28 @@ import * as actionTypes from "./types";
 
 
 const INITIAT_STATE = {
-    products: [],
+    products1: [],
+    products2: [],
+    products3: [],
     cart: JSON.parse(window.localStorage.getItem("cart")) || [],
   };
 
   const shopReducer = (state = INITIAT_STATE, action) => {
     switch (action.type) {
-      case actionTypes.GET_ALL_PRODUCTS:
+      case actionTypes.PRODUCTS1:
         return {
           ...state,
-          products: action.payload.products,
+          products1: action.payload.products,
+        };
+      case actionTypes.PRODUCTS2:
+        return {
+          ...state,
+          products2: action.payload.products,
+        };
+      case actionTypes.PRODUCTS3:
+        return {
+          ...state,
+          products3: action.payload.products,
         };
       case actionTypes.ADD_TO_CART:
         const item = state.products.find(
