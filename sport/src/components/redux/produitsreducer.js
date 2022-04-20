@@ -26,9 +26,15 @@ const INITIAT_STATE = {
           products3: action.payload.products,
         };
       case actionTypes.ADD_TO_CART:
-        const item = state.products.find(
+        const item = state.products1.find(
           (prod) => prod._id === action.payload._id
-        );
+        )||state.products2.find(
+          (prod) => prod._id === action.payload._id
+        )||state.products3.find(
+          (prod) => prod._id === action.payload._id
+        )
+
+
         const inCart = state.cart.find((item) =>
           item._id === action.payload._id ? true : false
         );

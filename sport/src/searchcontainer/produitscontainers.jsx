@@ -10,26 +10,24 @@ class Produitscontainers extends Component {
   constructor(props){
     super(props);
      this.state={
+       data:[],
+       data2:[],
+       data3:[],
        collapsed: false,
-       books_added:[]
+       
      }
     }
 
-    componentDidMount = async () => {
-console.log(this.props.produits1,this.props.produits2,this.props.produits3);
+
+componentDidMount = async () => {
+//console.log(this.props.produits1,this.props.produits2,this.props.produits3);
        // console.log(response,"aaaaa")
       //console.log(response2,"rrrr")
       //console.log(response3,"zzzz")
    }
 
 
-   addBokkstoApp=(roro)=>{
-    //console.log('adding books to app',roro); // pour le books to app
-     this.setState({
-        books_added:[...this.state.books_added,roro]
-  })
-  
-  }
+   
 
   render() {
 //console.log(this.props.products)
@@ -59,8 +57,8 @@ console.log(this.props.produits1,this.props.produits2,this.props.produits3);
     
           <SubMenu  icon={<MailOutlined />} title="produits">
           <Link to={"/Produitnutrition"}><Menu.Item key="5">Nutrition Sportive</Menu.Item></Link>
-            <Menu.Item key="6">Vitamines et Santé</Menu.Item>
-            <Menu.Item key="7">Vêtements et Accessoires </Menu.Item>
+          <Link to={"/Produitvitamine"}> <Menu.Item key="6">Vitamines et Santé</Menu.Item></Link>
+          <Link to={"/Produitvetement"}> <Menu.Item key="7">Vêtements et Accessoires </Menu.Item></Link>
           </SubMenu>
           <SubMenu  icon={<AppstoreOutlined />} title="panier">
             <Menu.Item key="9">panier</Menu.Item>
@@ -68,20 +66,14 @@ console.log(this.props.produits1,this.props.produits2,this.props.produits3);
           </SubMenu>
        </Menu>
 
-            <h2>mon panier</h2>
-            <ul>
-                {this.state.books_added.map(el=> <li>{el}</li> )}
-            </ul>
+            
         
       </div>
-   <Produits  booktoapp={this.addBokkstoApp}/>
+   <Produits/>
        </div>
     )
   }
 }
-
-
-
 
 //const mapDispatchToProps = (dispatch)=>{    //envoie les ldonnes
   //return{
@@ -91,4 +83,4 @@ console.log(this.props.produits1,this.props.produits2,this.props.produits3);
 
 
 
-    export default Produitscontainers
+export default Produitscontainers

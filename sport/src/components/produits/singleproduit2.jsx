@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
-import './singleproduits.css'
-import { Carousel } from 'antd';
 import { connect } from "react-redux";
 import {addToCart} from "../redux/action";
+import './singleproduits.css'
 import { Link } from "react-router-dom";
+import { Carousel } from 'antd';
 
 
-
- class Singleproduit extends Component {
-   
+ class Singleproduit2 extends Component {
   render() {
-     let cart = this.props.cart
+    let cart = this.props.cart
 
     return (
-      
-  
-
-<div style={{ 
+        <div style={{display:'flex',flexDirection:'row',backgroundColor:'gold'}}>
+        <div style={{ 
             width: '20rem',
             height:'20rem',
             margin: 10,
@@ -29,18 +25,14 @@ import { Link } from "react-router-dom";
         }}>
     <div className='content'>
    <div className="content-overlay"></div>
+
    <Carousel  autoplay>
      <div>
 <img className='content-image' style={{width:'15rem',height:'15rem'}} src={this.props.book.photo1} alt='produit'/>
     </div>
-    <div>
-    <img className='content-image' style={{width:'15rem',height:'15rem'}} src={this.props.book.photo2} alt='produit'/>
-   </div>
-   <div>
-   <img className='content-image' style={{width:'15rem',height:'15rem'}} src={this.props.book.photo3} alt='produit'/>
+  </Carousel>     
 
-   </div>
-     </Carousel>     
+
      <div className="content-details fadeIn-bottom">
             <h3 className="content-title">{this.props.book.name}</h3>
          </div>
@@ -54,29 +46,43 @@ import { Link } from "react-router-dom";
                  </button>
               </Link>
 
-<button onClick={()=>{this.props.addToCart(this.props.book._id);window.localStorage.setItem("cart", JSON.stringify(cart));}}>
-      Acheter
-</button>
 
+<button>supprimer</button>
           </div>
     
     </div>
-    )}}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+)}}
 const mapStateToProps = (state) => {  // recuperer les donnes 
-      return{
-  cart:state.shop.cart
-  }
-  } 
-    const mapDispatchToProps = (dispatch)=>{  //envoie les ldonnes
-      return{
-        addToCart:(id)=> dispatch(addToCart(id)),
+    return{
+cart:state.shop.cart
+}
+} 
+  const mapDispatchToProps = (dispatch)=>{  //envoie les ldonnes
+    return{
+      addToCart:(id)=> dispatch(addToCart(id)),
 
-      }
     }
+  }
 
 
 
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(Singleproduit); 
- 
+  export default connect(mapStateToProps, mapDispatchToProps)(Singleproduit2);

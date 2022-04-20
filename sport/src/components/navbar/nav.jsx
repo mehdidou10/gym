@@ -19,7 +19,7 @@ class nav extends Component {
 
      let data3= await fetch("http://localhost:777/produits3");
      let response3= await data3.json();
-
+//console.log(response.produits)
   
 this.props.getallProds1(response.produits)
 this.props.getallProds2(response2.produits2)
@@ -29,7 +29,7 @@ this.props.getallProds2(response2.produits2)
 
   render() {
     let islogged = this.props.isLogged;
-    console.log(islogged,'ttytygf')
+    
     return (
 
 <div className="navbar" >
@@ -46,28 +46,21 @@ this.props.getallProds2(response2.produits2)
              </div>
 
 
+             
+
+            
+{islogged? <> 
 
              <div className="item wah"> 
-             <Link to={"/Home2" }>
-             <button> 
-                         HOME2 
-              </button>
-              </Link>
-             </div>
-
-            
-
-
-            
-
-
-
-
-{islogged? <> 
-<div className="item"> 
-             <Link to={'/produitscontainers'} > <button>produits</button></Link>
+             <Link to={"/Home2" }><button> HOME2</button></Link>
              </div>
              
+
+             
+               <div className="item"> 
+             <Link to={'/produitscontainers'} > <button>produits</button></Link>
+             </div>           
+              
              <div className="item"> 
              <Link to={'/cardcontainer'} > <button> card </button></Link>
              </div>
@@ -75,10 +68,18 @@ this.props.getallProds2(response2.produits2)
              <div className="item">
              <Link to={"/Programme"}> <button> Abonnement </button></Link>
             </div>
-<div className="item"><button onClick={()=>{this.props.logout();
-  localStorage.removeItem("TOKEN");
-  this.props.navigate("/")}}>deconnected</button></div></> 
+            <div className="item selected">
+            <Link to={"/cart"}><button> panier</button></Link>
+            </div>
+
+
+           <div className="item"><button onClick={()=>{this.props.logout();
+            localStorage.removeItem("TOKEN");
+            this.props.navigate("/")}}>deconnected</button></div></> 
               
+
+
+
             :<div className="item selected">
             <Link to={"/login"}><button> connexion</button></Link>
             </div>}
