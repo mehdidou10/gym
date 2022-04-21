@@ -17,7 +17,7 @@ import Programme from './components/programme/programme';
 import Produitnutrition from './components/produitindividu/produitnutrition';
 import Produitvitamine from './components/produitindividu/produitvitamine';
 import Produitvetement from './components/produitindividu/produitvetement';
-
+import Commande  from './components/addtocart/commande';
 import Cart from './components/addtocart/cart';
 
 import { Provider } from 'react-redux';
@@ -53,6 +53,7 @@ class App extends Component {
     <Route path="/programme" element={<Programme/>}/>
     
     <Route path="/Cart" element={<Cart/>}/>
+    <Route path="/commande" element={<Commande/>}/>
 
 
 

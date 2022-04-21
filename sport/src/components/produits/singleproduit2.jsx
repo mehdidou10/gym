@@ -4,6 +4,7 @@ import {addToCart,removeFromCart,adjust} from "../redux/action";
 import './singleproduits.css'
 import { Link } from "react-router-dom";
 import { Carousel } from 'antd';
+import { CloseOutlined } from '@ant-design/icons'
 
 
 
@@ -22,52 +23,72 @@ constructor(props) {
 
     return (
         <div style={{display:'flex',flexDirection:'row',backgroundColor:'gold'}}>
+        
+        
+        
+        
+        
         <div style={{ 
-            width: '20rem',
+            width: '40rem',
             height:'20rem',
             margin: 10,
-            padding:22,
+            
             backgroundColor:'greenyellow',
             display:'flex',
             justifyContent:'center',
             alignItems:'center',
-            flexDirection:'column'
+            flexDirection:'row',
         }}>
-    <div className='content'>
-   <div className="content-overlay"></div>
-
-   <Carousel  autoplay>
-     <div>
-<img className='content-image' style={{width:'15rem',height:'15rem'}} src={this.props.book.photo1} alt='produit'/>
-    </div>
-  </Carousel>     
 
 
-     <div className="content-details fadeIn-bottom">
-            <h3 className="content-title">{this.props.book.name}</h3>
-         </div>
-     </div> 
-         <div>
-              <h5>{this.props.book.prix}$</h5>
+    
+      <div>  
+
+         <Carousel  autoplay>
+             <div>
+             <img  style={{width:'15rem',height:'15rem'}} src={this.props.book.photo1} alt='produit'/>
+             </div>
+         </Carousel>   
+         <button onClick={()=> removeFromCart(this.props.book._id)}>
+                  <CloseOutlined /> supprimer
+          </button>
+
+         </div>  
+
+
+
+    <div  style={{ width:'25rem',height:'15rem',
+    marginLeft:'1rem',
+           backgroundColor:'red',
+            display:'flex',
+            flexDirection:'column',
+            gap:'1rem'
+        }}>
+             <h3 className="content-title">{this.props.book.name}</h3>
+              <p style={{fontsize:'9rem'}}>{this.props.book.prix}$</p>
               
+
               <Link to={`/leproduit/${this.props.book._id}`}> 
                  <button>
                    voir le produits
                  </button>
               </Link>
 
+          <input type="number" min={'1'} value={this.state.qty} onChange={(event)=>{this.setState({qty:event.target.value});adjust(this.props.book._id,event.target.value)}}/>
+     </div>
+            
+     
+     
+</div> 
 
-<button onClick={()=> removeFromCart(this.props.book._id)}>
-    supprimer
-</button>
 
-<input type="number" min={'1'} value={this.state.qty} onChange={(event)=>{this.setState({qty:event.target.value});adjust(this.props.book._id,event.target.value)}}/>
-          </div>
+
+         
     
-    </div>
-    
-
 </div>
+    
+
+
 )}}
 const mapStateToProps = (state) => {  // recuperer les donnes 
     return{

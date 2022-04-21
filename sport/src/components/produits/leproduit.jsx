@@ -12,7 +12,7 @@ let produit3 = products3.filter((items) => (items._id === pro ? true : false));
 let filter = produit1.concat(produit2).concat(produit3);
 let item = filter[0];
  
-  console.log(filter)
+  console.log(filter,pro)
   return (
     <div> 
 <img src={item?.photo1} alt="mlm" width={500} height={500} />

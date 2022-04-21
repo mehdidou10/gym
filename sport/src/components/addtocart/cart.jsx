@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Singleproduit2 from '../produits/singleproduit2';
 
+import { PlusOutlined } from '@ant-design/icons'
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 
  class Cart extends Component {
@@ -38,7 +40,25 @@ import { connect } from "react-redux";
       }
 
   render() {
+let neworders= async() =>{ 
+  let token = JSON.parse(localStorage.getItem("TOKEN"))
+  let response  = await fetch("http://localhost:777/orders",{
+    method :'POST',
+    headers: {
+            "Content-Type": "application/json",
+            authtoken: token,
+        },
+    body:JSON.stringify({
+         produits1:cart1[0],
+         produits2:cart1[1],
+         produits3:cart1[2],
 
+    })
+                 
+                 
+  })
+      console.log(response.status)
+    }
 
      let cart1 = this.props.cart;
      console.log(cart1)
@@ -47,33 +67,42 @@ import { connect } from "react-redux";
 <div style={{ 
             display: 'flex',
             justifyContent:'center',
-            alignItems:'center',
-            flexDirection:'row',
+           flexDirection:'row',
             width: '100%',
             height:'52rem',
             backgroundColor:'blue',
-            marginBottom:'3rem',
-            marginLeft:'2rem',
-            position:'relative',
-            margin:'2rem ',
-            gap:'3rem',
+           gap:'3rem',
             }}> 
-   <div style={{backgroundColor:'red',height:'30rem',width:'60rem'}}>
+
+
+
+
+
+   <div style={{height:'30rem',width:'50rem',backgroundColor:'red'}}>
                           <h1>cartt</h1>
  {cart1.map((el,idx)=>(  idx < this.state.count ? <Singleproduit2 book={el} key={idx}/>: <></> ))}
  {<button  type="link"  onClick={() => this.setState({count: this.state.count + 2})} >
-     <img style={{width:'3rem',height:'3rem'}} src="https://static.vecteezy.com/ti/vecteur-libre/p2/567102-icone-plus-supplementaire-gratuit-vectoriel.jpg" alt='moomom'/>
+ <PlusOutlined /> plus de resultat
 </button>}
     </div>
-        <div style={{ width: '20rem',
-            height:'19rem',
-            backgroundColor:'brown'}}>
 
-               <h2>Total</h2>
+
+
+
+
+
+
+        <div style={{ width: '20rem',height:'19rem',backgroundColor:'brown',marginTop:'2rem',
+       
+        }}>
+              <h2>Total</h2>
               <p>total items:{this.state.totalItems}</p>
-              <p>total prix:{this.state.totalprix}$</p>
-
+              <p >total prix:{this.state.totalprix}$</p>
+              <Link to={"/commande"}>
+              <button onClick={()=>neworders()}>commander</button>
+              </Link>
              </div>      
+             
     </div>
     )
   }

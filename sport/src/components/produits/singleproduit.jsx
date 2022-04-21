@@ -55,7 +55,7 @@ import { Link } from "react-router-dom";
               </Link>
 
 <button onClick={()=>{this.props.addToCart(this.props.book._id);window.localStorage.setItem("cart", JSON.stringify(cart));}}>
-      Acheter
+      Add to cart
 </button>
 
           </div>

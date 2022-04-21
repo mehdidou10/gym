@@ -8,6 +8,7 @@ import { compose } from "redux";
 import {getallProds1} from '../redux/action';
 import {getallProds2} from '../redux/action';
 import {getallProds3} from '../redux/action';
+import { ShoppingCartOutlined } from '@ant-design/icons'
 
 class nav extends Component {
 
@@ -45,9 +46,6 @@ this.props.getallProds2(response2.produits2)
                    </Link>
              </div>
 
-
-             
-
             
 {islogged? <> 
 
@@ -56,8 +54,7 @@ this.props.getallProds2(response2.produits2)
              </div>
              
 
-             
-               <div className="item"> 
+             <div className="item"> 
              <Link to={'/produitscontainers'} > <button>produits</button></Link>
              </div>           
               
@@ -69,7 +66,7 @@ this.props.getallProds2(response2.produits2)
              <Link to={"/Programme"}> <button> Abonnement </button></Link>
             </div>
             <div className="item selected">
-            <Link to={"/cart"}><button> panier</button></Link>
+            <Link to={"/cart"}><button> <ShoppingCartOutlined /></button></Link>
             </div>
 
 
