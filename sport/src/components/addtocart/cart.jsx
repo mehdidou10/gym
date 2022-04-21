@@ -9,32 +9,32 @@ import { connect } from "react-redux";
         super(props);
     
         this.state = {
-          totalPrice: 0,
+          totalprix: 0,
           totalItems: 0,
           count: 3
         };
       }
       componentDidUpdate(prevProps, prevState) {
-        let price = 0;
+        let prix = 0;
         let itemcount = 0;
         let cart = this.props.cart;
         cart.forEach((item) => {
           itemcount += item.qty;
-          price += item.qty * item.price;
+          prix += item.qty * item.prix;
         });
         if (prevState === this.state) {
-          this.setState({ totalPrice: price, totalItems: itemcount });
+          this.setState({ totalprix: prix, totalItems: itemcount });
         }
       }
       componentDidMount() {
-        let price = 0;
+        let prix = 0;
         let itemcount = 0;
         let cart = this.props.cart;
         cart.forEach((item) => {
           itemcount += item.qty;
-          price += item.qty * item.price;
+          prix += item.qty * item.prix;
         });
-        this.setState({ totalPrice: price, totalItems: itemcount});
+        this.setState({ totalprix: prix, totalItems: itemcount});
       }
 
   render() {
@@ -61,7 +61,7 @@ import { connect } from "react-redux";
    <div style={{backgroundColor:'red',height:'30rem',width:'60rem'}}>
                           <h1>cartt</h1>
  {cart1.map((el,idx)=>(  idx < this.state.count ? <Singleproduit2 book={el} key={idx}/>: <></> ))}
- {<button  type="link"  onClick={e => this.setState({count: this.state.count + 2})} >
+ {<button  type="link"  onClick={() => this.setState({count: this.state.count + 2})} >
      <img style={{width:'3rem',height:'3rem'}} src="https://static.vecteezy.com/ti/vecteur-libre/p2/567102-icone-plus-supplementaire-gratuit-vectoriel.jpg" alt='moomom'/>
 </button>}
     </div>
@@ -71,7 +71,7 @@ import { connect } from "react-redux";
 
                <h2>Total</h2>
               <p>total items:{this.state.totalItems}</p>
-              <p>total price:{this.state.totalPrice}</p>
+              <p>total prix:{this.state.totalprix}$</p>
 
              </div>      
     </div>

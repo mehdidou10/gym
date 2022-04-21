@@ -48,6 +48,23 @@ const INITIAT_STATE = {
               )
             : [...state.cart, { ...item, qty: 1 }],
         };  
+       
+        case actionTypes.REMOVE_FROM_CART:
+      return {
+        ...state,
+        cart: state.cart.filter((item) => item._id !== action.payload._id),
+      };
+      case actionTypes.ADJ_QTY:
+        return {
+          ...state,
+          cart: state.cart.map((item) =>
+            item._id === action.payload._id
+              ? { ...item, qty: +action.payload.qty }
+              : item
+          ),
+        };
+
+
     default:
         return state;
     }

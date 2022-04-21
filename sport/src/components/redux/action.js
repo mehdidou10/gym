@@ -39,3 +39,23 @@ export const login = () => {
       payload: { products },
     };
   };
+
+
+  export const adjust = (itemID, value) => {
+    return {
+      type: actionTypes.ADJ_QTY,
+      payload: {
+        _id: itemID,
+        qty: value,
+      },
+    };
+  };
+
+  export const removeFromCart = (itemID) => {
+    return {
+      type: actionTypes.REMOVE_FROM_CART,
+      payload: {
+        _id: itemID,
+      },
+    };
+  };
