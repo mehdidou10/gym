@@ -54,8 +54,8 @@ sendforlogin = async (Email,password) => {
 
 <div class='big3'>
 
-      <div className='text'>
-  <Carousel style={{ width:'42rem',height:'25rem',backgroundColor:'red'}} autoplay>
+    <div className='text'>
+    <Carousel style={{ width:'42rem',height:'25rem',backgroundColor:'red'}} autoplay>
     <div>
       <img style={contentStyle} src="https://i.pinimg.com/564x/f5/c1/69/f5c169ab8625d1d651bf55b168182959.jpg" alt="mmmmmmm" />
     </div>
@@ -66,8 +66,14 @@ sendforlogin = async (Email,password) => {
     <div>
     <img style={contentStyle} src="https://pbs.twimg.com/media/E1qphZ1WQAEJFe9.jpg" alt="opo" />
     </div>
-  </Carousel>,            
-        </div>
+    </Carousel>,            
+    </div>
+
+
+
+
+
+
 
   <div class="card2 " >
           <h3 className="step-title">connexion man</h3>
