@@ -1,164 +1,148 @@
-.bigsearch{
-    height: 320vh;
- width: 100%;
-   
+.bigsearch {
+  height: 320vh;
+  width: 100%;
 }
-.introduction{
- display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-height: 25rem;
-background-image: linear-gradient(to bottom, rgba(255,128,255,0.5), rgba(0,0,128,0.5)), url("https://media.gqmagazine.fr/photos/61a0adb2ddfa16e9c15f3651/16:9/w_2560%2Cc_limit/photo-1517836357463-d25dfeac3438.jpeg");    
-background-size: cover;
-background-repeat: no-repeat;
-
-
+.introduction {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 25rem;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 128, 255, 0.5),
+      rgba(0, 0, 128, 0.5)
+    ),
+    url("https://media.gqmagazine.fr/photos/61a0adb2ddfa16e9c15f3651/16:9/w_2560%2Cc_limit/photo-1517836357463-d25dfeac3438.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.introduction-button{
-    height: 3rem;
-    width: 25%;
-    cursor: pointer;
+.introduction-button {
+  height: 3rem;
+  width: 25%;
+  cursor: pointer;
 }
-
 
 /*deuxieme divvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
-.programmme{
-height: 49rem;
-width: 100%;
-background-color: green;
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+.programmme {
+  height: 49rem;
+  width: 100%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 /*troisieme divvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
-.produits{
- height: 48rem; 
- width: 100%;    
-background-color: rgb(255, 238, 5);
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
-
+.produits {
+  height: 48rem;
+  width: 100%;
+  background-color: rgb(255, 238, 5);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: scroll;
 }
-.custom-slider{
-    height: 18rem;
-    width: 12rem;
-    background-color: aqua;
-    margin: 22%;
-}
-
-
-.lodash{
-display: flex;
-flex-wrap: wrap;
-width: 80%;
-background-color: black;
-margin-left: 10rem;
-
-
+.custom-slider {
+  height: 18rem;
+  width: 12rem;
+  background-color: aqua;
+  margin: 22%;
 }
 
-
-
+.lodash {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  background-color: black;
+  margin-left: 10rem;
+}
 
 /*coachhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
-.coach{
-background-color: blanchedalmond;
-height: 48rem;
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+.coach {
+  background-color: blanchedalmond;
+  height: 48rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 /*les etagesssssssssssssssssssssssssssssssssssssssssssssssssssssss*/
-.etage{
-    height: 38rem;
-    background-color: rgb(250, 6, 6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.etage {
+  height: 38rem;
+  background-color: rgb(250, 6, 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.etage1{
-   height: 5rem;
-   width: 28rem;
-   background-color: rgb(2, 163, 51);
+.etage1 {
+  height: 5rem;
+  width: 28rem;
+  background-color: rgb(2, 163, 51);
 }
-.etage2{
-height: 5rem;
-width: 28rem;
-background-color: rgb(11, 241, 11);
+.etage2 {
+  height: 5rem;
+  width: 28rem;
+  background-color: rgb(11, 241, 11);
 }
-.etage3{
-height: 5rem;
-width: 28rem;
-background-color: rgb(11, 190, 4);
+.etage3 {
+  height: 5rem;
+  width: 28rem;
+  background-color: rgb(11, 190, 4);
 }
-
-
 
 /* fooooooooooooooooooooooooterrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
-.footer{
- 
-height: 48rem;
-background-color: aqua;
-display: flex;
-justify-content: center;
-align-items: center;
+.footer {
+  height: 48rem;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-flex-direction: column;
-
-
+  flex-direction: column;
 }
 
-
-.reseau{
-height: 10rem;
-width: 100%;
-background-color: chocolate;
-display: flex;
-justify-content: center;
-align-items: center;
-gap: 4rem;
+.reseau {
+  height: 10rem;
+  width: 100%;
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
 }
-.reseau>p{
-    background-color: aqua;
+.reseau > p {
+  background-color: aqua;
 }
-.facebook{
-    background-color: gold;
+.facebook {
+  background-color: gold;
 }
-.instagram{
-    background-color: red;
+.instagram {
+  background-color: red;
 }
-.map{
-height:30rem ;
-width: 100%;
-display: flex;
-justify-content:space-around;
-align-items: center;
-flex-direction: row;
-background-color: antiquewhite;
+.map {
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: antiquewhite;
 }
-.left{
-background-color: cornflowerblue;
-height: inherit;
-width: 50%;
-
+.left {
+  background-color: cornflowerblue;
+  height: inherit;
+  width: 50%;
 }
 
-.right{
-background-color: darkgreen;
-height: inherit;
-width: 50%;
+.right {
+  background-color: darkgreen;
+  height: inherit;
+  width: 50%;
 }
-
 
 /* fooooooooooooooooooooooooterrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
