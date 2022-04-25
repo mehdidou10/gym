@@ -111,13 +111,7 @@ class Bigsearch extends Component {
             </div>
           </div>
 
-          <div className="map">
-            <div className="left">
-              <p>pour le map</p>
-            </div>
-
-            <div className="right"></div>
-          </div>
+          
         </div>
 
         {/*footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/}

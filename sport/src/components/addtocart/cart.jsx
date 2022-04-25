@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Singleproduit2 from "../produits/singleproduit2";
 
-import { PlusOutlined } from "@ant-design/icons";
+
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -49,18 +49,21 @@ class Cart extends Component {
           justifyContent: "center",
           flexDirection: "row",
           width: "100%",
-          height: "52rem",
-          backgroundColor: "blue",
-          gap: "3rem",
-        }}
-      >
+          
+          
+         marginTop:'5.1rem'
+     
+        }}>
+      
+
         <div
           style={{
-            height: "30rem",
+            height: "max-content",
             width: "50rem",
             backgroundColor: "red",
             position: "absolute",
-            left:'3rem'
+            left:'3rem',
+            padding:'2rem'
           }}
         >
           <h1>cartt</h1>
@@ -79,7 +82,7 @@ class Cart extends Component {
             width: "20rem",
             height: "19rem",
             backgroundColor: "brown",
-            marginTop: "2rem",
+            marginTop: "4rem",
             position: "fixed",
             right: "3rem",
           }}

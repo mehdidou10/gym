@@ -44,6 +44,7 @@ componentDidMount = async () => {
         height:'320vh',
         width:'100%',
         backgroundColor:'orange',
+        marginTop:'5.2rem'
       }} >
    <div style={{height:'30rem', width:'33rem',marginLeft:'.3rem',backgroundColor:'violet' }}>
         

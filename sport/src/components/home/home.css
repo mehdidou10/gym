@@ -1,0 +1,94 @@
+.big1 {
+  display: flex;
+  
+  flex-direction: column;
+  width: 100%;
+  height: 340vh;
+  background-color: red;
+  background-position: center top;
+  background-size: cover;
+}
+.time {
+}
+
+.carousel {
+  background-color: blue;
+  height: 40rem;
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+}
+
+.info1 {
+  height: 20rem;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+}
+
+.info {
+  height: 15rem;
+  width: 19rem;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.texteffect {
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: red;
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  height: 30rem;
+
+  background-image: url(https://img.freepik.com/photos-gratuite/jeune-homme-remise-forme-studio_7502-5008.jpg?w=2000);
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+
+
+.moh{
+    height:50rem;
+    background-color: aqua;
+}
+
+
+h3 {
+    font-size: 5em;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  #section1 {
+    color: #fff;
+  }
+  
+  .fp-section {
+    text-align: center;
+  }
+  
+  button {
+    padding: 0.93em 1.87em;
+    background: #35495e;
+    border-radius: 5px;
+    border-color: transparent;
+    display: block;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+    font-size: 0.85em;
+  }
+  
