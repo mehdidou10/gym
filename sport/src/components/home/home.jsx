@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-gallery-carousel";
 import "react-gallery-carousel/dist/index.css";
 import "./home.css";
-import { EnvironmentOutlined, PhoneOutlined } from "@ant-design/icons";
+import { CheckCircleTwoTone } from "@ant-design/icons";
 import Typewriter from "typewriter-effect";
 
 
@@ -23,6 +23,10 @@ const home = () => {
     {
       src: "https://i.pinimg.com/736x/6d/06/92/6d0692118ef4012bb66487b2f5f8540a.jpg",
     },
+
+    {
+     
+    }
   ];
 
   return (
@@ -33,13 +37,6 @@ const home = () => {
 
 
       <div className="time"></div>
-
-
-
-
-
-
-
 
 
       <div className="carousel">
@@ -97,27 +94,38 @@ const home = () => {
 
 
 
+     <div className="pourquoinous">
+      
+     <div className="det">
+<p><CheckCircleTwoTone />Espaces Cardio Training, musculation libre et guidée</p>
+<p><CheckCircleTwoTone />Une communauté de passionnés !</p>
+<p><CheckCircleTwoTone />Accès à nos salles 7j/7 et 365 jours/an</p>
+<p></p>
+     </div>
+     <div className="det">
+<p><CheckCircleTwoTone />Cage de Cross Training et accessoires complets</p>
+<p><CheckCircleTwoTone />Matériel haut de gamme et connecté</p>
+<p><CheckCircleTwoTone />Cours collectifs vidéo exclusifs</p>
+<p><CheckCircleTwoTone />Wifi gratuit</p>
+     </div>
 
 
-      <div className="info1">
-        <div className="info">
-          <EnvironmentOutlined />
-          <h1>ADRESSE</h1>
-          <p>C/ Finlandia 108 Nave 5,14014 Córdoba, Espagne </p>
-        </div>
 
-        <div className="info">
-          <PhoneOutlined />
-          <h1>TÉLÉPHONE</h1>
-          <p>
-            T 04 11 93 26 60 Horaire d'attention téléphonique: De 9h à 19h sans
-            interruption{" "}
-          </p>
-        </div>
 
-        <div className="info">gggggg</div>
-      </div>
 
+
+     </div>
+
+<div>
+              
+</div>
+
+
+
+
+
+
+      
 
 
 

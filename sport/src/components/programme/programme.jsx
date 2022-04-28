@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Singleprogramme from './singleprogramme';
 import { connect } from 'react-redux'
+import './programme.css'
 
  class Programme extends Component {
   constructor(props){
@@ -25,25 +26,14 @@ import { connect } from 'react-redux'
 console.log(this.props,'oippoioo')
     return (
 
-      <div style={{ 
-        display: 'flex',
-        justifyContent:'center',
-        flexDirection:'column',
-        backgroundColor:'red',
-        height:'220vh'
+      <div className='pr1' style={{ 
+        
         }}>
 
 
   <h1 style={{display: 'flex',justifyContent:'center',}}>choose your programme</h1>
 
-      <div style={{ display: 'flex',justifyContent:'center',
-        
-        width: "85%",
-        height:'38rem',
-        backgroundColor:'yellow',
-        marginLeft:'9rem',
-        gap:'2rem',
-        marginBottom:'20rem'
+      <div className='programme' style={{ 
         
       }}>
     

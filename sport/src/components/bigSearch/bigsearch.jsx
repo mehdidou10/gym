@@ -56,15 +56,19 @@ class Bigsearch extends Component {
         <div className="produits">
           <h1>LES PRODUITS </h1>
           {/*{<Produitscontainers2   data={sample}/>}*/}
+        <div style={{display: 'flex',justifycontent: 'center',flexdirection: 'row',}}>
           {sample?.map((mehdi, index) => (
             <Singleproduit book={mehdi} key={index} />
           ))}
-
+          </div>
+       <div>
           <Link to={"/Produitscontainers"}>
             <button>Checkout voir tous les produits</button>
           </Link>
           <h1>ddddddddddddddddddddd</h1>
-        </div>
+       </div> 
+       
+       </div>
 
         {/* produitsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
 
@@ -89,30 +93,30 @@ class Bigsearch extends Component {
         </div>
         {/*featuringnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         {/*footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/}
-
-        <div className="footer">
-          <div className="reseau">
-            <p>Suivez-nous sur les reseau socieux </p>
-
-            <div className="facebook">
-              <img src="image/facebook.png" alt="facebook" />
-              <a
-                href="https://www.flaticon.com/fr/icones-gratuites/facebook"
-                title="facebook icônes"
-              >
-                notre page de facebook
-              </a>
-            </div>
-
-            <div className="instagram">
-              <img src="image/instagram.png" alt="instagram" />
-              <a href="https://www.youtube.com/watch?v=X-swJqjzjCI"> insta</a>
-            </div>
-          </div>
-
-          
-        </div>
 
         {/*footerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/}
       </div>

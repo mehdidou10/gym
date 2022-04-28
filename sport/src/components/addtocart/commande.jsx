@@ -6,7 +6,7 @@ class Commande extends Component {
     super(props);
     this.state = {
       adress: "",
-    };  
+    };
   }
 
   render() {

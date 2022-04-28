@@ -1,0 +1,73 @@
+.footer {
+  width: 100%;
+  height: 10rem;
+  background-color: gold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+
+.reseau {
+  height: 10rem;
+  width: 23rem;
+  background-color: silver;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.sui {
+  border-right: solid 5px #ff0000;
+  height: 2rem;
+  width: 7rem;
+}
+.facebook {
+  height: 3rem;
+  width: 5rem;
+  background-color: brown;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.instagram {
+  height: 3rem;
+  width: 5rem;
+  background-color: orange;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+
+
+
+.info1 {
+  height: 10rem;
+  background-color: rgb(19, 199, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.9rem;
+  border-left: solid 5px #ff0000;
+}
+
+.info {
+  height: 10rem;
+  width: 19rem;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

@@ -19,7 +19,7 @@ import Produitvitamine from './components/produitindividu/produitvitamine';
 import Produitvetement from './components/produitindividu/produitvetement';
 import Commande  from './components/addtocart/commande';
 import Cart from './components/addtocart/cart';
-
+import Footer from './components/footer/footer';
 import { Provider } from 'react-redux';
 import store  from './components/redux/store';
 
@@ -35,6 +35,7 @@ class App extends Component {
     <Router>
     {/*<Navbarhome/>*/}
     <Nav/>
+    
     
   <Routes>
      
@@ -58,6 +59,8 @@ class App extends Component {
 
 
    </Routes>
+   <Footer/>
+   
    </Router>   
    </div>
   </Provider>  

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Singleproduit2 from "../produits/singleproduit2";
 
-
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -12,7 +11,6 @@ class Cart extends Component {
     this.state = {
       totalprix: 0,
       totalItems: 0,
-      
     };
   }
   componentDidUpdate(prevProps, prevState) {
@@ -49,32 +47,26 @@ class Cart extends Component {
           justifyContent: "center",
           flexDirection: "row",
           width: "100%",
-          
-          
-         marginTop:'5.1rem'
-     
-        }}>
-      
 
+          marginTop: "5.1rem",
+        }}
+      >
         <div
           style={{
             height: "max-content",
             width: "50rem",
             backgroundColor: "red",
             position: "absolute",
-            left:'3rem',
-            padding:'2rem'
+            left: "3rem",
+            padding: "2rem",
+            
           }}
         >
           <h1>cartt</h1>
-          {cart.map((el, idx) =>
-           (
-              <Singleproduit2 book={el} key={idx} />
-            )  
-          )}
-          {
-           
-          }
+          {cart.map((el, idx) => (
+            <Singleproduit2 book={el} key={idx} />
+          ))}
+          {}
         </div>
 
         <div
@@ -85,6 +77,8 @@ class Cart extends Component {
             marginTop: "4rem",
             position: "fixed",
             right: "3rem",
+            
+            
           }}
         >
           <h2>Total</h2>

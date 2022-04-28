@@ -3,13 +3,12 @@
   
   flex-direction: column;
   width: 100%;
-  height: 340vh;
+  height: 440vh;
   background-color: red;
   background-position: center top;
   background-size: cover;
 }
-.time {
-}
+
 
 .carousel {
   background-color: blue;
@@ -19,24 +18,7 @@
   align-items: center;
 }
 
-.info1 {
-  height: 20rem;
-  background-color: silver;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.9rem;
-}
 
-.info {
-  height: 15rem;
-  width: 19rem;
-  background-color: aqua;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
 
 .texteffect {
   font-family: sans-serif;
@@ -58,14 +40,14 @@
 }
 
 
-
+/*pour teste fullpage*/
 .moh{
     height:50rem;
     background-color: aqua;
 }
 
 
-h3 {
+.h3 {
     font-size: 5em;
     text-align: center;
     color: #fff;
@@ -80,7 +62,7 @@ h3 {
     text-align: center;
   }
   
-  button {
+.button {
     padding: 0.93em 1.87em;
     background: #35495e;
     border-radius: 5px;
@@ -92,3 +74,28 @@ h3 {
     font-size: 0.85em;
   }
   
+  /*pournous*/
+.pourquoinous{
+background-color: blueviolet;
+height: 35rem;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+gap: .5rem;
+
+
+}
+.det{
+  margin-left: 4rem;
+
+background-color: antiquewhite;
+height: 12rem;
+width: 25rem;
+
+
+}
+
+
+
+
+
