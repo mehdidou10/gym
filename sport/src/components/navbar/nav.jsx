@@ -9,7 +9,7 @@ import {getallProds1} from '../redux/action';
 import {getallProds2} from '../redux/action';
 import {getallProds3} from '../redux/action';
 import { ShoppingCartOutlined } from '@ant-design/icons'
-
+import '../image/69840.png'
 class nav extends Component {
 
   componentDidMount = async () => {
@@ -40,8 +40,8 @@ this.props.getallProds2(response2.produits2)
       
              <div className="item wah"> 
                    <Link to={"/" }>
-                      <button> 
-                         HOME 
+                      <button className="btn"> 
+                        <img src="69840.png" alt="c"/>
                       </button>
                    </Link>
              </div>
@@ -50,23 +50,23 @@ this.props.getallProds2(response2.produits2)
 {islogged? <> 
 
              <div className="item wah"> 
-             <Link to={"/Home2" }><button> HOME2</button></Link>
+             <Link to={"/Home2" }><button className="btn"> HOME2</button></Link>
              </div>
              
 
              <div className="item"> 
-             <Link to={'/produitscontainers'} > <button>produits</button></Link>
+             <Link to={'/produitscontainers'} > <button className="btn">produits</button></Link>
              </div>           
               
              <div className="item"> 
-             <Link to={'/cardcontainer'} > <button> card </button></Link>
+             <Link to={'/cardcontainer'} > <button className="btn"> card </button></Link>
              </div>
              
              <div className="item">
-             <Link to={"/Programme"}> <button> Abonnement </button></Link>
+             <Link to={"/Programme"}> <button className="btn"> Abonnement </button></Link>
             </div>
             <div className="item selected">
-            <Link to={"/cart"}><button> <ShoppingCartOutlined /></button></Link>
+            <Link to={"/cart"}><button className="btn"> <ShoppingCartOutlined /></button></Link>
             </div>
 
 

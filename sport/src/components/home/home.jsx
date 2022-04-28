@@ -34,8 +34,6 @@ const home = () => {
 
 
 
-
-
       <div className="time"></div>
 
 

@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
-  height: 10rem;
-  background-color: gold;
+  height: 5.6rem;
+  background-color: silver;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -10,9 +10,9 @@
 }
 
 .reseau {
-  height: 10rem;
+  height: 5.3rem;
   width: 23rem;
-  background-color: silver;
+ 
   display: flex;
   justify-content: end;
   align-items: center;
@@ -27,24 +27,39 @@
 .facebook {
   height: 3rem;
   width: 5rem;
-  background-color: brown;
+ 
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #ff0000;
+  transition: all 0.9s ease-in-out;
+}
+
+.facebook:hover{
+    background: rgb(247, 38, 38);
+    color: gold;
+    border:solid 2px #030202;
 }
 .instagram {
   height: 3rem;
   width: 5rem;
-  background-color: orange;
+  color: #ff0000;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: all 0.9s ease-in-out;
+}
+.instagram:hover{
+ background: red;
+border:solid 2px #000000;
+color:gold ;
+
 }
 
 
@@ -53,8 +68,8 @@
 
 
 .info1 {
-  height: 10rem;
-  background-color: rgb(19, 199, 244);
+  height: 5rem;
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,11 +78,19 @@
 }
 
 .info {
-  height: 10rem;
+  height: 5.2rem;
   width: 19rem;
-  background-color: aqua;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transition: all 0.9s ease-in-out;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.info:hover{
+  background: red;
+  border:solid 2px #000000;
+  color:gold ;
 }

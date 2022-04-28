@@ -19,12 +19,16 @@ class singleprogramme extends Component {
 
 
 
-        <div>
-        <p><CheckCircleTwoTone/>{this.props.data1.time}</p>
-       
-        
-        <p><CheckCircleTwoTone/>{this.props.data1.coach}</p>
+        <div className="detail">
+        <p style={{color:'white'}}><CheckCircleTwoTone/>{this.props.data1.time}</p>
+        <p><CheckCircleTwoTone/>Locker + Bathroom</p>
 
+        <p><CheckCircleTwoTone/>Trainer Advice</p>
+        
+       
+        <div className="trainer">
+        <p><CheckCircleTwoTone/>{this.props.data1.coach}</p>
+        </div>
          </div>
 
 

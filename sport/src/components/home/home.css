@@ -4,18 +4,21 @@
   flex-direction: column;
   width: 100%;
   height: 440vh;
-  background-color: red;
-  background-position: center top;
+  background-image: url('https://previews.123rf.com/images/eireen/eireen1510/eireen151000010/47671172-vector-grunge-illustration-de-la-main-avec-halt%C3%A8res-et-expression-de-motivation-no-pain-no-gain-fitn.jpg');
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
 
 .carousel {
-  background-color: blue;
+ 
   height: 40rem;
   margin-top: 7rem;
   display: flex;
   align-items: center;
+  border-radius: 15rem;
 }
 
 

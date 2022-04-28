@@ -25,21 +25,18 @@ class Footer extends Component {
             <a href="https://www.flaticon.com/fr/icones-gratuites/facebook" target="_blank">
               <FacebookOutlined />
             </a>
-            <h6>facebook</h6>
+            <p>facebook</p>
           </div>
 
           <div className="instagram">
             <a href="https://www.youtube.com/watch?v=X-swJqjzjCI" target="_blank">
               <InstagramOutlined />
             </a>
-            <h6>instagram</h6>
+            <p>instagram</p>
           </div>
 
 
         </div>
-
-
-
 
 
 
@@ -52,7 +49,7 @@ class Footer extends Component {
              <EnvironmentOutlined /> 
             </a>
             
-            <h3>ADRESSE</h3>
+            <p>ADRESSE</p>
             <p>Q2HR+6C5, Rue des Frères, Bouchouchi 16000</p>
           </div>
 
@@ -60,7 +57,7 @@ class Footer extends Component {
 
           <div className="info">
             <PhoneOutlined />
-            <h3>TÉLÉPHONE</h3>
+            <p>TÉLÉPHONE</p>
             <p>
             0561442657 Horaire d'attention téléphonique
             </p>
