@@ -1,81 +1,260 @@
+/*animationnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
 .content {
-    position: relative;
-    width: 90%;
-    max-width: 400px;
-    margin: auto;
-    overflow: hidden;
-    
-  }
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+.content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.content:hover .content-overlay {
+  opacity: 1;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+.fadeIn-bottom {
+  top: 80%;
+}
+.fadeIn-top {
+  top: 20%;
+}
+.fadeIn-left {
+  left: 20%;
+}
+.fadeIn-right {
+  left: 80%;
+}
+/*animationnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn*/
+
+
+.container {
+  height: 520vh;
+  width: 100%;
+  margin-top: 5.2rem;
+
+  background-image: url("https://previews.123rf.com/images/eireen/eireen1510/eireen151000010/47671172-vector-grunge-illustration-de-la-main-avec-halt%C3%A8res-et-expression-de-motivation-no-pain-no-gain-fitn.jpg");
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu {
+  width: 15rem;
+  margin-left: 1rem;
+  margin-top: 5.2rem;
+}
+
+.produits {
+  background-color: blue;
+  height: 142rem;
+  width: 90rem;
+  margin-right: 2rem;
+  margin-top: 5rem;
+
+  gap: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Nutrition-Sportive {
+  background-color: gold;
+  height: 45rem;
+  display: flex;
   
-  .content-overlay {
-      background: rgba(0,0,0,0.7);
-      position: absolute;
-      height: 99%;
-      width: 100%;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      opacity: 0;
-      -webkit-transition: all 0.4s ease-in-out 0s;
-      -moz-transition: all 0.4s ease-in-out 0s;
-      transition: all 0.4s ease-in-out 0s;
-    }
-    .content:hover .content-overlay{
-      opacity: 1;
-    }
-    
-   
-    .content-details {
-      position: absolute;
-      text-align: center;
-      padding-left: 1em;
-      padding-right: 1em;
-      width: 100%;
-      top: 50%;
-      left: 50%;
-      opacity: 0;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      -moz-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-    }
-    
-    .content:hover .content-details{
-      top: 50%;
-      left: 50%;
-      opacity: 1;
-    }
-    
-    .content-details h3{
-      color: #fff;
-      font-weight: 500;
-      letter-spacing: 0.15em;
-      margin-bottom: 0.5em;
-      text-transform: uppercase;
-      
-     
-    }
-    
-    .content-details p{
-      color: #fff;
-      font-size: 0.8em;
-    }
-    
-    .fadeIn-bottom{
-      top: 80%;
-    }
-    
-    .fadeIn-top{
-      top: 20%;
-    }
-    
-    .fadeIn-left{
-      left: 20%;
-    }
-    
-    .fadeIn-right{
-      left: 80%;
-    }
+  flex-direction: column;
+}
+.Nutrition-Sportive > h1 {
+  height: 7rem;
+  color: #fff;
+  margin-left: 25rem;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 3, 3), 0 0 0.2em rgb(255, 8, 8);
+  line-height: 160px;
+  
+}
+.Nutrition {
+  margin-bottom: 5rem;
+  background-color: #ff0000;
+  height: 32rem;
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+
+
+.Vitamines-Santé {
+  background-color: rgb(24, 220, 255);
+  height: 45rem;
+}
+.Vitamines-Santé > h1 {
+  height: 7rem;
+  color: white;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 3, 3), 0 0 0.2em rgb(255, 8, 8);
+  margin-left: 25rem;
+  line-height: 160px;
+}
+
+.Vitamines {
+  margin-bottom: 5rem;
+  background-color: silver;
+  height: 32rem;
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+
+  gap: 1.5rem;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+
+
+
+
+
+.Vêtements-Accessoires {
+  background-color: hotpink;
+}
+.Vêtements-Accessoires > h1 {
+  height: 7rem;
+  color: white;
+  text-shadow: 1px 1px 2px red, 0 0 1em rgb(255, 3, 3), 0 0 0.2em rgb(255, 8, 8);
+  margin-left: 25rem;
+
+  line-height: 160px;
+}
+.Vêtements {
+  margin-bottom: 5rem;
+  background-color: black;
+  height: 32rem;
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: row;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.singlepro {
+  width: 20rem;
+  height: 25rem;
+  margin: 10;
+  padding: 22;
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red;
+  border-radius: 15px;
+}
+
+.partiebas {
+  border-top: solid .3rem #ff0000;
+  width: 20rem;
+  height: 8rem;
+  
+}
+.partiebas>h5{
+  text-shadow: 4px 4px 8px red;
+  font-size: .8rem;
+}
+
+
+
+
+.partiebutton{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+gap: 2rem;
+height: 3rem;
+
+}
+.btn2 {
+  background: red;
+  color: white;
+  width: 8rem;
+  
+  border-radius: 11px;
+}
+.btn2:hover{
+  background: rgb(0, 0, 0);
+  color: red;
+  border:solid 2px #030202;
+  cursor: pointer;
+  transition: 0.5s all ease-in-out;
+}

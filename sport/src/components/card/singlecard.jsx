@@ -26,7 +26,7 @@ class Singlecard extends Component {
 
  <div className="cardor">
         <div className="image">
-          <h1>gym card </h1>
+          <h1 >gym card </h1>
           <img style={{height:'5rem',width:'6rem'}} src='https://st4.depositphotos.com/13911342/25645/v/380/depositphotos_256451516-stock-illustration-vector-template-card-gym-identity.jpg?forcejpeg=true' alt="example" />
         {/* <input type="file" accept="image/*" />*/}
           <p>programme:{this.props.abonnement.abonnement}</p> 
@@ -37,7 +37,13 @@ class Singlecard extends Component {
           <h1>Name:{this.props.user1[0]?.First_Name}</h1>
           <h1>User_Name:{this.props.user1[0]?.Last_Name}</h1>
           <h1>number_phone:{this.props.user1[0]?.number_phone}</h1>
-          <p style={{marginleft: '2rem',fontSize:'1rem'}}> session  --- to --- </p>
+          
+        </div>
+
+
+        <div className="sign">
+      <p style={{fontSize:'1rem',position:'relative',right:'5rem'}}>session  --- to --- </p>
+   
           <h4>seing</h4>
         </div>
  </div>       

@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home2 from './components/home/home2';
 import Home from './components/home/home';
 //import Bigsearch from './components/bigSearch/bigsearch';
-import Produitscontainers from '../src/searchcontainer/produitscontainers';
+import Produits from './components/produits/produits';
 //import Programmecontainer from '../src/programmecontainer/programmecontainer';
 import Nav from './components/navbar/nav';
 //import Navbarhome from './components/navbar/navbarhome'
@@ -41,7 +41,7 @@ class App extends Component {
      
      <Route exact path="/" element={<Home/>}/> 
      <Route path="/Home2" element={<Home2/>}/>
-     <Route path="/Produitscontainers" element={<Produitscontainers/>} />
+     <Route path="/Produits" element={<Produits/>} />
      <Route path="/Produitnutrition" element={<Produitnutrition/>} />
      <Route path="/Produitvitamine" element={<Produitvitamine/>} />
      <Route path="/Produitvetement" element={<Produitvetement/>} />

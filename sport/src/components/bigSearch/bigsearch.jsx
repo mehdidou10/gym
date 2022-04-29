@@ -9,6 +9,8 @@ import "./bigsearch.css";
 import { connect } from "react-redux";
 import Singleproduit from "../produits/singleproduit";
 
+
+
 class Bigsearch extends Component {
   render() {
     let product1 = this.props.product1;
@@ -36,8 +38,8 @@ class Bigsearch extends Component {
         {/* programmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmme */}
 
         <div className="programmme">
-          <h1> PROGRAMME </h1>
-
+          <h1>PROGRAMME</h1>
+                              
           <Link to={"/Programmecontainer"}>
             <button /*onClick={() => 
       {this.props.history.push("/Produitscontainers")}}*/
@@ -72,12 +74,23 @@ class Bigsearch extends Component {
 
         {/* produitsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
 
+
+
+
+
+
+
         {/* our coachhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/}
         <div className="coach">
           <h1> our coach they will be with you all the time </h1>
           {<Coachcontainer />}
         </div>
         {/*our coashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/}
+
+
+
+
+
 
         <div>
           <h1>mommmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</h1>

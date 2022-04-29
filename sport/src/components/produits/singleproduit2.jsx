@@ -19,13 +19,11 @@ constructor(props) {
   render() {
     let cart = this.props.cart;
     let removeFromCart = this.props.removeFromCart;
+    
     let adjust = this.props.adjust;
 
     return (
         <div style={{display:'flex',flexDirection:'row',backgroundColor:'gold',}}>
-        
-        
-        
         
         
         <div style={{ 

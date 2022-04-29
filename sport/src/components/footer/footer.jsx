@@ -1,15 +1,10 @@
 import React, { Component } from "react";
 import "./footer.css";
-import {
-  EnvironmentOutlined,
-  PhoneOutlined,
-  FacebookOutlined,
-  InstagramOutlined,
-} from "@ant-design/icons";
+import {EnvironmentOutlined,PhoneOutlined,FacebookOutlined,InstagramOutlined,} from "@ant-design/icons";
 class Footer extends Component {
   render() {
     return (
-      <div className="footer">
+      <div className="footer" >
         {/*<p>Suivez-nous sur les reseau socieux </p>*/}
 
 

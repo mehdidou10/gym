@@ -22,7 +22,7 @@ class Cart extends Component {
       prix += item.qty * item.prix;
     });
     if (prevState === this.state) {
-      this.setState({ totalprix: prix, totalItems: itemcount });
+      this.setState({ totalprix: prix, totalItems: itemcount });window.localStorage.setItem("cart", JSON.stringify(cart))
     }
   }
   componentDidMount() {

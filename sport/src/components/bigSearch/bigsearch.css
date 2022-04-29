@@ -1,7 +1,12 @@
 .bigsearch {
   height: 520vh;
   width: 100%;
-  margin-Top:6rem
+  margin-Top:6rem;
+  background-image: url('https://previews.123rf.com/images/eireen/eireen1510/eireen151000010/47671172-vector-grunge-illustration-de-la-main-avec-halt%C3%A8res-et-expression-de-motivation-no-pain-no-gain-fitn.jpg');
+ background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .introduction {
   display: flex;
@@ -57,12 +62,17 @@
 
 /*coachhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
 .coach {
-  background-color: blanchedalmond;
+ 
   height: 48rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+}
+.coach>h1{
+
+  color: red;
 }
 
 /*les etagesssssssssssssssssssssssssssssssssssssssssssssssssssssss*/

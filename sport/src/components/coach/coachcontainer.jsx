@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Coach from '../coach/coach'
+import Singlecoach from "../coach/singlecoach";
+import './singlecoach.css'
+
 class Coachcontainer extends Component {
   constructor(props){
     super(props);
@@ -20,13 +23,12 @@ class Coachcontainer extends Component {
 }
   render() {
     return (
-      <div style={{
-        display: 'flex',
-        justifyContent:'center',
-        height:'40rem',
-        width:'100%',
-        backgroundColor:'red'
-      }}>
+      <div className='container' >
+ {this.state.data.map((el) => (<Singlecoach personnage={el} />))}
+          
+       
+
+
           <Coach co={this.state.data}/>
       </div>
     )

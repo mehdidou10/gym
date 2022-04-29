@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Singlecard from "./singlecard";
-
+import './card.css'
 class Card extends Component {
   constructor(props) {
     super(props);
@@ -33,7 +33,7 @@ class Card extends Component {
           <Singlecard user1={this.state.user} />
         
 
-        <div style={{ backgroundColor: "beige", width: "30rem", height: "25rem" }}>
+        <div className="conseil">
          <p> this card is your badge acces to the gym ,
           <br /> every time you go in ,
           <br /> its should be with you ,<br /> 

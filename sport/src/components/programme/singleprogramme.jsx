@@ -10,7 +10,7 @@ class singleprogramme extends Component {
 
 
         <div className="title">
-        <h5 style={{ color: "white", fontSize: "1.8rem" }}>
+        <h5 style={{ color: "white", fontSize: "1.8rem",}}>
           {this.props.data1.programme}
         </h5>
         

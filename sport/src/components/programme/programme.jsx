@@ -26,16 +26,12 @@ import './programme.css'
 console.log(this.props,'oippoioo')
     return (
 
-      <div className='pr1' style={{ 
-        
-        }}>
+      <div className='pr1'>
 
 
   <h1 style={{display: 'flex',justifyContent:'center',}}>choose your programme</h1>
 
-      <div className='programme' style={{ 
-        
-      }}>
+      <div className='programme'>
     
 
     

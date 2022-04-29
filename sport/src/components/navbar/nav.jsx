@@ -55,7 +55,7 @@ this.props.getallProds2(response2.produits2)
              
 
              <div className="item"> 
-             <Link to={'/produitscontainers'} > <button className="btn">produits</button></Link>
+             <Link to={'/produits'} > <button className="btn">produits</button></Link>
              </div>           
               
              <div className="item"> 
