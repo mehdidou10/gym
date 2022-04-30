@@ -36,10 +36,10 @@ class Footer extends Component {
 
 
 
-        <div className="info1">
+        <div className="footer1">
 
 
-          <div className="info">
+          <div className="footer2">
             <a href="https://www.google.com/maps/dir//Q2HR%2B6C5+SACAL+FITNESS+GYM,+Rue+des+Frères,+Bouchouchi+16000/@36.7777468,3.0408764,345m/data=!3m1!1e3!4m9!4m8!1m0!1m5!1m1!1s0x128fb32129885b77:0xfba81128466d6094!2m2!1d3.0410969!2d36.7780047!3e0" target="_blank">
              <EnvironmentOutlined /> 
             </a>
@@ -50,7 +50,7 @@ class Footer extends Component {
 
 
 
-          <div className="info">
+          <div className="footer2">
             <PhoneOutlined />
             <p>TÉLÉPHONE</p>
             <p>

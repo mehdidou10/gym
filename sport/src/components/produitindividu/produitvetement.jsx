@@ -6,31 +6,15 @@ import { connect } from "react-redux";
     render() {
         //console.log(this.props)
         return (
-            <div style={{ 
-                display: 'flex',
-                justifyContent:'center',
-                 width: '100%',
-                height:'88rem',
-                backgroundColor:'blue',           
-                }}>
-    
-    <div style={{backgroundColor:'gold',height:'20rem'
-                }}>
-    
-     <h1 style={{height: '7rem',color: '#fff',lineHeight: '160px',marginBottom:'3rem'}} > Nutrition Sportive</h1>
-    
-     <div style={{backgroundColor:'red',height:'73rem' ,width:'70rem',
-     display:'flex',
-     justifyContent:'center',
-     
-     flexWrap:'wrap'
-     }}>
+<div className='produitvetement0' >
+
+    <h1> Nutrition Sportive</h1>
+    <div className='produitvetement1'>
     {this.props.produits3.map((el) => <Singleproduit book={el}/>)}
-    
-           </div>
-    
-    </div>     
     </div>
+    
+</div>     
+    
         )
       }
 }

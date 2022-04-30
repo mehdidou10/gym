@@ -4,15 +4,15 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home2 from './components/home/home2';
 import Home from './components/home/home';
-//import Bigsearch from './components/bigSearch/bigsearch';
+
 import Produits from './components/produits/produits';
-//import Programmecontainer from '../src/programmecontainer/programmecontainer';
+
 import Nav from './components/navbar/nav';
-//import Navbarhome from './components/navbar/navbarhome'
+
 import Login from './components/login/login';
 import Leproduit from './components/produits/leproduit'
 import Singup from './components/signup/signup';
-import Cardcontainer from './programmecontainer/cardcontainer';
+import Card from './components/card/card';
 import Programme from './components/programme/programme';
 import Produitnutrition from './components/produitindividu/produitnutrition';
 import Produitvitamine from './components/produitindividu/produitvitamine';
@@ -50,7 +50,7 @@ class App extends Component {
     <Route path="/leproduit/:pro" element={<Leproduit/>}/>
 
     <Route path="/signup" element={<Singup/>}/>
-    <Route path="/cardcontainer" element={<Cardcontainer/>}/>
+    <Route path="/card" element={<Card/>}/>
     <Route path="/programme" element={<Programme/>}/>
     
     <Route path="/Cart" element={<Cart/>}/>

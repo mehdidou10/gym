@@ -33,7 +33,7 @@ class Produits extends Component {
         const { SubMenu } = Menu;
         return (
 
-<div className='container' >
+<div className='produitscontainer' >
 
 
 <div className='menu' >

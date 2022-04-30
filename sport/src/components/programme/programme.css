@@ -45,7 +45,7 @@
   border: solid #ff0000 0.2rem;
 }
 .singleprogramme:active {
-  transform: scale(0.3);
+  transform: scale(0.1);
 }
 
 .detail {

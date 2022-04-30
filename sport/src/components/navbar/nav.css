@@ -50,7 +50,7 @@
 }
 
 
-.signup {
+.signupnav {
   border-radius: 50%;
   display: inline-block;
   display: flex;
@@ -63,7 +63,7 @@
   height: 75px;
   margin: 0 auto;
 }
-.signup:hover {
+.signupnav:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
@@ -73,19 +73,24 @@
 
 
 
-.btn{
+.btn3{
   height: 3rem;
+  width: 5.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
-  
-  transition: all 0.9s ease-in-out;
+   background: red;
+  color: white;
+
+  transition: all 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+ 
 }
-.btn:hover{
-  background: rgb(247, 38, 38);
-    color: gold;
-    border:solid 2px #030202;
+.btn3:hover{
+  background: black;
+  color: rgb(167, 0, 0);
+  border: solid 5px #ff0000
  
 }

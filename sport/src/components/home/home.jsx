@@ -30,7 +30,7 @@ const home = () => {
   ];
 
   return (
-    <div className="big1">
+    <div className="home">
 
 
 

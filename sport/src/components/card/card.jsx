@@ -28,6 +28,9 @@ class Card extends Component {
   };
   render() {
     return (
+
+<div className="Cardcontainer" >
+
       <div className="card">
         
           <Singlecard user1={this.state.user} />
@@ -40,6 +43,9 @@ class Card extends Component {
           without here you can't enter</p>
         </div>
          
+      </div>
+
+
       </div>
     );
   }

@@ -30,7 +30,7 @@
 }
 
 /*deuxieme divvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
-.programmme {
+.programmme0 {
   height: 49rem;
   width: 100%;
   background-color: green;
@@ -41,7 +41,7 @@
 }
 
 /*troisieme divvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
-.produits {
+.produits0{
   height: 48rem;
   width: 100%;
   background-color: rgb(255, 238, 5);
@@ -52,7 +52,7 @@
   overflow: scroll;
 }
 
-.lodash {
+.lodash{
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -61,7 +61,7 @@
 }
 
 /*coachhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
-.coach {
+.coach0{
  
   height: 48rem;
   display: flex;
@@ -70,7 +70,7 @@
   align-items: center;
 
 }
-.coach>h1{
+.coach0>h1{
 
   color: red;
 }
@@ -100,16 +100,3 @@
   background-color: rgb(11, 190, 4);
 }
 
-/* fooooooooooooooooooooooooterrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/
-
-
-
-
-
-
-
-
-
-
-
-/* fooooooooooooooooooooooooterrrrrrrrrrrrrrrrrrrrrrrrrrrrrr*/

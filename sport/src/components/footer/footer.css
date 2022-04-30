@@ -68,7 +68,7 @@ color:gold ;
 
 
 
-.info1 {
+.footer1 {
   height: 5rem;
   
   display: flex;
@@ -78,7 +78,7 @@ color:gold ;
   border-left: solid 5px #ff0000;
 }
 
-.info {
+.footer2 {
   height: 5.2rem;
   width: 19rem;
  
@@ -90,7 +90,7 @@ color:gold ;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.info:hover{
+.footer2:hover{
   background: red;
   border:solid 2px #000000;
   color:gold ;

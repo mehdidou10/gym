@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-//import Programmecontainer2 from '../../programmecontainer/programmecontainer2';
-//import Produitscontainers2 from '../../searchcontainer/produitscontainers2';
-import Coachcontainer from "../coach/coachcontainer";
-//import doto from "../MOCK_DATA (1).json";
-//import doto3 from "../MOCK_DATA 3.json";
+
+import Coach from "../coach/coach";
+
 import "./bigsearch.css";
 import { connect } from "react-redux";
 import Singleproduit from "../produits/singleproduit";
@@ -22,7 +20,10 @@ class Bigsearch extends Component {
     console.log(sample);
 
     return (
+
+
       <div className="bigsearch">
+
         {/* introductionnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn */}
 
         <div className="introduction">
@@ -35,9 +36,11 @@ class Bigsearch extends Component {
           <h1>jlllll</h1>
         </div>
 
+
+
         {/* programmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmme */}
 
-        <div className="programmme">
+        <div className="programmme0">
           <h1>PROGRAMME</h1>
                               
           <Link to={"/Programmecontainer"}>
@@ -54,8 +57,16 @@ class Bigsearch extends Component {
           <h1>hhhhhhhhhhhhhhhhhhhh</h1>
         </div>
 
+
+
+
+
+
+
+
+
         {/* produitsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss */}
-        <div className="produits">
+        <div className="produits0">
           <h1>LES PRODUITS </h1>
           {/*{<Produitscontainers2   data={sample}/>}*/}
         <div style={{display: 'flex',justifycontent: 'center',flexdirection: 'row',}}>
@@ -81,9 +92,9 @@ class Bigsearch extends Component {
 
 
         {/* our coachhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/}
-        <div className="coach">
+        <div className="coach0">
           <h1> our coach they will be with you all the time </h1>
-          {<Coachcontainer />}
+          {<Coach />}
         </div>
         {/*our coashhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/}
 

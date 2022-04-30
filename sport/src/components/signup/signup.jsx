@@ -41,15 +41,17 @@ sendforsignup = async (sign) => {
   render() {
     
     return (
- <div class="big"> 
+
+
+ <div class="signup0"> 
               <div class='t'> 
-                <h1 class='titre'>creat your profile</h1>
+                <h1 class='signuptitre'>creat your profile</h1>
               </div> 
              
-<div class='bigs1'>
+<div class='signup1'>
              
 
-       <div class="card1" data-step>
+       <div class="signupinfo" data-step>
             <h3 class="step-title">This is step 1</h3>
       
             <div class="form-group1">
@@ -75,7 +77,7 @@ sendforsignup = async (sign) => {
  
       
 
-     <div class="card1" data-step>
+     <div class="signupinfo" data-step>
            <h3 class="step-title">This is step 2</h3>
 
            <div class="form-group1">

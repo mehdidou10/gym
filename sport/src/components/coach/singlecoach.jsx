@@ -3,7 +3,7 @@ import './singlecoach.css'
  class Singlecoach extends Component {
   render() {
     return (
-      <div className='single' >
+      <div className='singlecoach' >
 
 
 

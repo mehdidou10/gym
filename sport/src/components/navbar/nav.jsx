@@ -40,7 +40,7 @@ this.props.getallProds2(response2.produits2)
       
              <div className="item wah"> 
                    <Link to={"/" }>
-                      <button className="btn"> 
+                      <button className="btn3"> 
                         <img src="69840.png" alt="c"/>
                       </button>
                    </Link>
@@ -50,23 +50,23 @@ this.props.getallProds2(response2.produits2)
 {islogged? <> 
 
              <div className="item wah"> 
-             <Link to={"/Home2" }><button className="btn"> HOME2</button></Link>
+             <Link to={"/Home2" }><button className="btn3"> HOME2</button></Link>
              </div>
              
 
              <div className="item"> 
-             <Link to={'/produits'} > <button className="btn">produits</button></Link>
+             <Link to={'/produits'} > <button className="btn3">produits</button></Link>
              </div>           
               
              <div className="item"> 
-             <Link to={'/cardcontainer'} > <button className="btn"> card </button></Link>
+             <Link to={'/card'} > <button className="btn3"> card </button></Link>
              </div>
              
              <div className="item">
-             <Link to={"/Programme"}> <button className="btn"> Abonnement </button></Link>
+             <Link to={"/Programme"}> <button className="btn3"> Abonnement </button></Link>
             </div>
             <div className="item selected">
-            <Link to={"/cart"}><button className="btn"> <ShoppingCartOutlined /></button></Link>
+            <Link to={"/cart"}><button className="btn3"> <ShoppingCartOutlined /></button></Link>
             </div>
 
 
@@ -83,7 +83,7 @@ this.props.getallProds2(response2.produits2)
 
             <div className="item selected ">
             <Link to={"/signup" }>
-                <button className="signup"> Sign up </button>
+                <button className="signupnav"> Sign up </button>
             </Link>
             </div>
             
