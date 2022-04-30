@@ -22,7 +22,8 @@ class Cart extends Component {
       prix += item.qty * item.prix;
     });
     if (prevState === this.state) {
-      this.setState({ totalprix: prix, totalItems: itemcount });window.localStorage.setItem("cart", JSON.stringify(cart))
+      this.setState({ totalprix: prix, totalItems: itemcount });
+      window.localStorage.setItem("cart", JSON.stringify(cart));
     }
   }
   componentDidMount() {
@@ -44,22 +45,23 @@ class Cart extends Component {
       <div
         style={{
           display: "flex",
-          justifyContent: "center",
           flexDirection: "row",
           width: "100%",
+          minHeight: "min-content",
 
+          backgroundColor: "blue",
           marginTop: "5.1rem",
         }}
       >
         <div
           style={{
             height: "max-content",
+            minHeight: "35rem",
             width: "50rem",
             backgroundColor: "red",
-            position: "absolute",
             left: "3rem",
             padding: "2rem",
-            
+            margin: "2rem",
           }}
         >
           <h1>cartt</h1>
@@ -77,8 +79,6 @@ class Cart extends Component {
             marginTop: "4rem",
             position: "fixed",
             right: "3rem",
-            
-            
           }}
         >
           <h2>Total</h2>
