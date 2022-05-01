@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import swal from 'sweetalert';
 
 class Commande extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class Commande extends Component {
 
   render() {
     let cart = this.props.cart;
-
+    
     let neworders = async () => {
       let token = JSON.parse(localStorage.getItem("TOKEN"));
       let response = await fetch("http://localhost:777/orders", {
@@ -26,6 +27,7 @@ class Commande extends Component {
         }),
       });
       console.log(response.status);
+      if( await response.status===200)(swal("Good job!", "You clicked the button!", "success"))
     };
 
     return (
@@ -34,7 +36,7 @@ class Commande extends Component {
       <div className="commandepage">
 
 
-        <div>
+       
 
         <input type="text" onChange={(e) => this.setState({ adress: e.target.value })}/>
 
@@ -45,7 +47,7 @@ class Commande extends Component {
 
 
 
-      </div>
+      
     );
   }
 }
