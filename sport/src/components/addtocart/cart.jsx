@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Singleproduit2 from "../produits/singleproduit2";
+import Singleproduitcart from "../produits/singleproduitcart";
 
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-
+import './cart.css'
 class Cart extends Component {
   constructor(props) {
     super(props);
@@ -42,52 +42,30 @@ class Cart extends Component {
 
     console.log(cart);
     return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          width: "100%",
-          minHeight: "min-content",
+      <div className="cartcontainer">
 
-          backgroundColor: "blue",
-          marginTop: "5.1rem",
-        }}
-      >
-        <div
-          style={{
-            height: "max-content",
-            minHeight: "35rem",
-            width: "50rem",
-            backgroundColor: "red",
-            left: "3rem",
-            padding: "2rem",
-            margin: "2rem",
-          }}
-        >
-          <h1>cartt</h1>
-          {cart.map((el, idx) => (
-            <Singleproduit2 book={el} key={idx} />
-          ))}
+
+
+        <div className="cart">
+          <h1>Panier</h1>
+          {cart.map((el, idx) => ( <Singleproduitcart book={el} key={idx} />))}
           {}
         </div>
 
-        <div
-          style={{
-            width: "20rem",
-            height: "19rem",
-            backgroundColor: "brown",
-            marginTop: "4rem",
-            position: "fixed",
-            right: "3rem",
-          }}
-        >
-          <h2>Total</h2>
-          <p>total items:{this.state.totalItems}</p>
-          <p>total prix:{this.state.totalprix}$</p>
+
+
+        <div className="commandecart">
+          <h2>RÉSUMÉ DU PANIER : Total</h2>
+          <p>nombre total de produits:{this.state.totalItems}</p>
+          <p>prix total:{this.state.totalprix}$</p>
           <Link to={"/commande"}>
-            <button>commander</button>
+            <button className="btn5" >commander</button>
           </Link>
         </div>
+
+
+
+
       </div>
     );
   }

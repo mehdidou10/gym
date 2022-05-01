@@ -1,25 +1,100 @@
 .home {
   display: flex;
-  
+
   flex-direction: column;
   width: 100%;
-  height: 440vh;
-  background-image: url('https://previews.123rf.com/images/eireen/eireen1510/eireen151000010/47671172-vector-grunge-illustration-de-la-main-avec-halt%C3%A8res-et-expression-de-motivation-no-pain-no-gain-fitn.jpg');
+  height: 240vh;
+  background-image: url("https://previews.123rf.com/images/eireen/eireen1510/eireen151000010/47671172-vector-grunge-illustration-de-la-main-avec-halt%C3%A8res-et-expression-de-motivation-no-pain-no-gain-fitn.jpg");
   background-origin: content-box;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-top: 6rem;
 }
 
-
 .carousel {
- 
-  height: 40rem;
+  margin-bottom: 5rem;
+  height: 20rem;
   margin-top: 7rem;
   display: flex;
   align-items: center;
   border-radius: 15rem;
+  background-color: aqua;
 }
+
+
+.det0{
+  height: 35rem;
+  width: 100%;
+ display: flex;
+ justify-content: center;
+align-items: center;
+flex-direction: column;
+  background-image: url("https://previews.123rf.com/images/eireen/eireen1510/eireen151000010/47671172-vector-grunge-illustration-de-la-main-avec-halt%C3%A8res-et-expression-de-motivation-no-pain-no-gain-fitn.jpg");
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: rgb(211, 0, 0);
+}
+.det1 {
+  height: 35rem;
+  width: 100%;
+ display: flex;
+ justify-content: center;
+align-items: center;
+flex-direction: column;
+  background-image: url("https://wallpaperaccess.com/full/1078044.jpg");
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  color: rgb(211, 0, 0);
+}
+.det2{
+background-color: coral;
+
+}
+.dettext{
+  font-family: sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  color: red;
+  text-align: center;
+  display: flex;
+
+  align-items: center;
+  height: 30rem;
+
+
+}
+
+.pourquoinous {
+  background-color: blueviolet;
+  height: 35rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,33 +116,3 @@
   background-size: cover;
   background-size: 100% 100%;
 }
-
-
-/*pour teste fullpage*/
-
-  
-  /*pournous*/
-.pourquoinous{
-background-color: blueviolet;
-height: 35rem;
-display: flex;
-align-items: center;
-justify-content: flex-start;
-gap: .5rem;
-
-
-}
-.det{
-  margin-left: 4rem;
-
-background-color: antiquewhite;
-height: 12rem;
-width: 25rem;
-
-
-}
-
-
-
-
-

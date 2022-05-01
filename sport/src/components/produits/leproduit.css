@@ -1,0 +1,156 @@
+.le{
+    width: 100%;
+   
+  height: 70rem;
+   
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://previews.123rf.com/images/eireen/eireen1510/eireen151000010/47671172-vector-grunge-illustration-de-la-main-avec-halt%C3%A8res-et-expression-de-motivation-no-pain-no-gain-fitn.jpg");
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.leproduit{
+    width: 64rem;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+    gap: .5rem;
+    background-color: silver;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(255, 0, 0, 0.2), 0 6px 20px 0 rgb(255, 0, 0);
+
+    border-radius: 5rem;
+
+}
+.imageleprodui{
+background-color: aqua;
+width: 30rem;
+height: 30rem;
+box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 rgb(255, 0, 0);
+border-radius: .5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.infoleproduit{
+background-color: silver;
+width: 30rem;
+height: 30rem;
+box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 rgb(255, 0, 0);
+border-radius: .5rem;
+
+}
+
+
+.nameleproduit{
+width:30rem ;
+height: 8rem;
+display: flex;
+justify-content: center;
+ align-items: center;
+ flex-direction: column;
+border-bottom:solid .5rem #ff0000;
+}
+
+
+.descriptionleproduit{
+    width:30rem ;
+    height: 15rem;
+    background-color: gold;
+   
+}
+
+.detailleproduit{
+    height: 15rem;
+    width: 30rem;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+  flex-direction: column;
+background-color: coral;
+}
+.detailleproduit>h5{
+    margin-right: 10rem;
+}
+
+.utilistationleproduit{
+    height: 15rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:violet ;
+    
+}
+
+.utilistationleproduit>p{
+    margin-right: 20rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.prixleproduit{
+width:30rem ;
+height:7rem ;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border-top: solid .5rem red;
+}
+.btnleproduit{
+ height: 3rem;
+  width: 12rem;
+  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red;
+  border-radius: 10px;
+  color: #ff0000;
+  background-color: silver;
+  transition: all 0.9s ease-in-out;
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+.btnleproduit:hover{
+    background: rgb(247, 38, 38);
+    color: gold;
+    border:solid 2px #030202;
+  }

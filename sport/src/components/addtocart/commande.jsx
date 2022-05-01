@@ -29,12 +29,22 @@ class Commande extends Component {
     };
 
     return (
-      <div>
-        <input
-          type="text"
-          onChange={(e) => this.setState({ adress: e.target.value })}
-        />
+
+
+      <div className="commandepage">
+
+
+        <div>
+
+        <input type="text" onChange={(e) => this.setState({ adress: e.target.value })}/>
+
         <button onClick={() => neworders()}>commande</button>
+
+       </div>
+
+
+
+
       </div>
     );
   }

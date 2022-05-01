@@ -71,7 +71,7 @@
 
 
 .produitscontainer {
-  height: 420vh;
+  height: 340vh;
   width: 100%;
   margin-top: 5.2rem;
 
@@ -81,26 +81,50 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+ 
   
   flex-direction: row;
+  
 }
 
 .menu {
-  width: 15rem;
-  margin-left: 1rem;
+  width: 50rem;
+  height: 5rem;
+ background-color: antiquewhite;
   margin-top: 5.2rem;
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.btncategorie1{
+  height: 3rem;
+  width: 12rem;
+  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red;
+  border-radius: 10px;
+  color: #ff0000;
+  background-color: silver;
+  transition: all 0.9s ease-in-out;
+  cursor: pointer;
+}
+.btncategorie1:hover{
+  background: rgb(247, 38, 38);
+  color: gold;
+  border:solid 2px #030202;
 }
 
 .produits {
   background-color: blue;
-  height: 142rem;
-  width: 90rem;
+  height: 133rem;
+  width: 80rem;
   margin-right: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 
-  gap: 5rem;
+  gap: 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -109,14 +133,9 @@
 
 
 
-
-
-
-
-
 .Nutrition-Sportive {
   background-color: gold;
-  height: 45rem;
+  height: 42rem;
   display: flex;
   
   flex-direction: column;
@@ -132,7 +151,7 @@
 .Nutrition {
   margin-bottom: 5rem;
   background-color: #ff0000;
-  height: 32rem;
+  height: 38rem;
   width: 70rem;
   display: flex;
   justify-content: center;
@@ -141,13 +160,16 @@
   flex-direction: row;
   overflow: hidden;
   overflow-x: scroll;
+
+  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 red;
+  border-radius: 8px;
 }
 
 
 
 .Vitamines-Santé {
   background-color: rgb(24, 220, 255);
-  height: 45rem;
+  height: 40rem;
 }
 .Vitamines-Santé > h1 {
   height: 7rem;
@@ -178,6 +200,7 @@
 
 .Vêtements-Accessoires {
   background-color: hotpink;
+  height: 40rem;
 }
 .Vêtements-Accessoires > h1 {
   height: 7rem;
@@ -261,4 +284,39 @@ height: 3rem;
   border:solid 2px #030202;
   cursor: pointer;
   transition: 0.5s all ease-in-out;
+}
+
+
+
+
+.sup{
+  border-radius: 15px;
+  color: white;
+  background-color: #ff0000;
+  transition: all 0.9s ease-in-out;
+cursor: pointer;
+
+}
+.sup:hover{
+  background: rgb(0, 0, 0);
+  color: red;
+  border:solid 2px #c90000;
+}
+
+
+.btnvoirleproduit{
+  height: 1.8rem;
+  width: 8rem;
+  border-radius: 15px;
+  color: white;
+  background-color: #ff0000;
+  transition: all 0.9s ease-in-out;
+cursor: pointer;
+}
+.btnvoirleproduit:hover{
+  background: rgb(0, 0, 0);
+  color: red;
+  border:solid 2px #c90000;
+  
+
 }

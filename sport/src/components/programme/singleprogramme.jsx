@@ -33,7 +33,7 @@ class singleprogramme extends Component {
 
 
 
-        <Link to={"/cardcontainer"}>
+        <Link to={"/card"}>
           <button className="btn"
             onClick={(e) =>
               this.props.dispatch1({

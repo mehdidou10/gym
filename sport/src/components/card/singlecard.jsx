@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import swal from 'sweetalert';
 import "./card.css";
 class Singlecard extends Component {
   updateuser = async () => {
@@ -17,10 +18,21 @@ class Singlecard extends Component {
     };
     let data = await fetch("http://localhost:777/programmeuser", options);
     console.log(data.status);
+if(data.status=200){swal.fire(
+  'Good job!',
+  'You clicked the button!',
+  'success'
+)
+
+}
+
+
+
+
   };
 
   render() {
-    console.log(this.props)
+    
     return (
       <div className="singlecard">
 

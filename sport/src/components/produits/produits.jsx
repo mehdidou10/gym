@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Singleproduit from './singleproduit';
 import { connect } from "react-redux";
 import 'antd/dist/antd.css';
-import { Menu } from 'antd';
-import { AppstoreOutlined,MailOutlined,PlusCircleTwoTone } from '@ant-design/icons';
+
+import {PlusCircleTwoTone } from '@ant-design/icons';
 import { Link } from "react-router-dom";
+import { CheckSquareTwoTone,ShoppingCartOutlined } from '@ant-design/icons';
 import './singleproduits.css';
 
 
@@ -30,32 +31,27 @@ class Produits extends Component {
         
 
     render(){
-        const { SubMenu } = Menu;
+       
         return (
 
 <div className='produitscontainer' >
 
 
+
+
+
+
+
 <div className='menu' >
     
-    <Menu defaultSelectedKeys={['1']} defaultOpenKeys={['sub1']} mode="inline" theme="dark" color='silver' inlineCollapsed={this.state.collapsed}>
-        <Menu.Item  >
-          Option 1
-        </Menu.Item>
-        <Menu.Item  >
-          Option 2
-        </Menu.Item>
-  
-        <SubMenu  icon={<MailOutlined />} title="produits">
-        <Link to={"/Produitnutrition"}><Menu.Item key="5">Nutrition Sportive</Menu.Item></Link>
-        <Link to={"/Produitvitamine"}> <Menu.Item key="6">Vitamines et Santé</Menu.Item></Link>
-        <Link to={"/Produitvetement"}> <Menu.Item key="7">Vêtements et Accessoires </Menu.Item></Link>
-        </SubMenu>
-        <SubMenu  icon={<AppstoreOutlined />} title="panier">
-        <Link to={"/Cart"}><Menu.Item key="9">panier</Menu.Item></Link>
-          <Menu.Item key="10">Option 10</Menu.Item>
-        </SubMenu>
-     </Menu>
+      <Link to={"/Produitnutrition"}><button className='btncategorie1'><CheckSquareTwoTone /> Nutrition Sportive </button></Link>
+      <Link to={"/Produitvitamine"}><button className='btncategorie1'><CheckSquareTwoTone /> Vitamines et Santé</button></Link>
+      <Link to={"/Produitvetement"}> <button className='btncategorie1'><CheckSquareTwoTone /> Vêtements et Accessoires</button></Link>
+
+        <Link to={"/Cart"}><button className='btncategorie1'><CheckSquareTwoTone /> panier  <ShoppingCartOutlined /></button></Link>
+        
+       
+    
   </div>
 
 
